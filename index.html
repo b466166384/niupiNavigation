@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="Shortcut Icon" href="https://www.baidu.com/favicon.ico" type="image/x-icon" />
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="js/cookie.js"></script>
+		<title></title>
+	</head>
+	<body>
+		<div style="width: 100%;" id="bg_div">
+			<img id="bg_div_img" style="width: 100%; height: 100%;" src="img/longlong.jpg" />
+		</div>
+
+		<div style="display: flex; width: 100%; flex-direction: column;">
+			<!-- 搜索框 -->
+			<div id="baidu_div">
+				<div style="width: 50%; height: auto;" id="body_div">
+					<img style="width: 60px; height: 60px;" src="img/baidu_logo.png">
+					<form action="https://www.baidu.com/s" target="_blank" style="width: 100%; display: flex; flex-direction: row;">
+						<span style="width: 100%; height: 60px; display: flex; align-items: center; margin-left: 15px;">
+							<input style="width: 100%; height: 30px;" name="wd" />
+						</span>
+						<span style="width: auto; height: 60px; display: flex; align-items: center; margin-left: 15px;">
+							<button style="width: 55px; height: 30px;">搜索</button>
+						</span>
+					</form>
+				</div>
+			</div>
+
+
+			<!-- 设置栏 -->
+			<div style="width: 100%; display: flex; flex-direction: row; align-items: center; justify-content:space-around;">
+				<div class="switch-boxs" style="margin-top: 10px; display: flex; align-items: center; margin-left: 20px;">
+					<input class="switch switch-admin" type="checkbox" data-text="关"></input>
+				</div>
+				<div>
+					<input id="bg_input" type="text"/>
+					<input id="bg_button" type="button" onclick="setLogoImg()" value="修改图片" />
+				</div>
+			</div>
+			
+			<!-- 导航地址 -->
+			<div class="nav_div_one" style="margin-top: 15px;">
+				<a href="https://fanyi.baidu.com/">
+					<img width="24" height="24" class="img" src="img/baidu_logo.png">
+					百度翻译
+				</a>
+				<a href="https://fanyi.baidu.com/">
+					<img width="24" height="24" class="img" src="img/baidu_logo.png">
+					
+				</a>
+			</div>
+
+			<!-- 隐藏的导航 -->
+			<div id="hide_div" style="margin-top: 30px;  background-color: #2E84FF; width: 100%; height: 90px; visibility: hidden;"></div>
+		</div>
+	</body>
+
+	<script type="text/javascript">
+		let flag = 1;
+		var switchs = document.querySelector('.switch');
+		switchs.onclick = function() {
+			flag *= -1;
+			if (flag > 0) {
+				document.querySelectorAll('.switch')[0].setAttribute('data-text', '关');
+				document.getElementById("hide_div").style.visibility = "hidden"
+			} else {
+				document.querySelectorAll('.switch')[0].setAttribute('data-text', '开');
+				document.getElementById("hide_div").style.visibility = "visible"
+
+			}
+		}
+	</script>
+</html>
