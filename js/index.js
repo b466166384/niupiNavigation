@@ -17,8 +17,13 @@ document.onreadystatechange = function() {
 function setLogoImg() {
 	var txt = document.getElementById("bg_input").value;
 	console.log(txt);
-	document.cookie = "bgImg=" + txt;
+	//document.cookie = "bgImg=" + txt;
+	var Days = 30;
+	var exp = new Date(); 
+	exp.setTime(exp.getTime() + Days*24*60*60*1000);
+	document.cookie = "bgImg" + "="+ escape (txt) + ";expires=" + exp.toGMTString();
 	document.getElementById("bg_div_img").src = txt;
+	
 };
 
 
