@@ -23,7 +23,7 @@ function setLogoImg() {
 	exp.setTime(exp.getTime() + Days*24*60*60*1000);
 	document.cookie = "bgImg" + "="+ escape (txt) + ";expires=" + exp.toGMTString();
 	document.getElementById("bg_div_img").src = txt;
-	
+	document.getElementById("bg_input").value = "";
 };
 
 
