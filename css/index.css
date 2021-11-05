@@ -7,12 +7,63 @@
 	right: 0;
 }
 
+.Selectbg {
+	border: 1px solid #ccc;
+	padding: 7px 0px;
+	border-radius: 3px;
+	padding-left: 5px;
+	background-color: white;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
+}
+
+.Selectbg:focus {
+	border-color: #66afe9;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6)
+}
+
+button {
+	width: auto;
+	/*设置按钮宽度*/
+	height: 30px;
+	/*设置按钮高度*/
+	color: white;
+	/*字体颜色*/
+	background-color: cornflowerblue;
+	/*按钮背景颜色*/
+	border-radius: 3px;
+	/*让按钮变得圆滑一点*/
+	border-width: 0;
+	/*消去按钮丑的边框*/
+	margin: 0;
+	outline: none;
+	/*取消轮廓*/
+	font-family: KaiTi;
+	/*字体设置为楷体*/
+	font-size: 17px;
+	/*设置字体大小*/
+	text-align: center;
+	/*字体居中*/
+	cursor: pointer;
+	/*设置鼠标箭头手势*/
+}
+
+button:hover {
+	/*鼠标移动时的颜色变化*/
+	background-color: burlywood;
+}
+
 #bg_div_img {
 	opacity: 0.4;
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100%; 
+	width: 100%;
 	height: 100%;
 }
 
@@ -29,7 +80,7 @@
 	flex-direction: row;
 }
 
-.nav_div_one {
+ .nav_div_one {
 	width: 100%;
 	display: flex;
 	flex: row;
@@ -48,7 +99,7 @@
 	margin-left: 25px;
 }
 
-
+ 
 
 .switch-boxs {
 	height: 50px;
@@ -121,4 +172,277 @@
 
 .switch.switch-admin:checked:before {
 	transition: left 0.3s;
+}
+
+
+.upload-wrap {
+	flex: display;
+	display: inline-table;
+	position: relative;
+	overflow: hidden;
+}
+
+.upload-wrap .file-ele {
+	position: absolute;
+	top: 0;
+	right: 0;
+	opacity: 0;
+	height: 100%;
+	width: 100%;
+	cursor: pointer;
+}
+
+.upload-wrap .file-open {
+	width: 80px;
+	height: 30px;
+	padding: 2px 6px;
+	text-align: center;
+	color: white;
+	/*字体颜色*/
+	background-color: cornflowerblue;
+	/*按钮背景颜色*/
+	border-radius: 3px;
+	/*让按钮变得圆滑一点*/
+	border-width: 0;
+	/*消去按钮丑的边框*/
+	margin: 0;
+	outline: none;
+	/*取消轮廓*/
+	font-family: KaiTi;
+	/*字体设置为楷体*/
+	font-size: 17px;
+	/*字体居中*/
+	cursor: pointer;
+}
+
+.upload-wrap:hover {
+	/*鼠标移动时的颜色变化*/
+	background-color: burlywood;
+}
+
+
+
+
+.div_select{
+	display: flex;
+	flex-direction:row ;
+	flex-wrap: nowrap;
+	width: 100%;
+
+}
+
+.span_select{
+	display: flex;
+	width: 12.5%;
+	height: 50px;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	font-size: 17px;	
+}
+#span_select1{
+	background: #99CCCC;
+	color: #FFFF00;
+}
+#span_select1:hover {
+	/*鼠标移动时的颜色变化*/
+	background-color: burlywood;
+}
+#span_select2{
+	background: #FFCCCC;
+	color: #CC0033;
+}
+#span_select2:hover {
+	/*鼠标移动时的颜色变化*/
+	background-color: burlywood;
+}
+#span_select3{
+	background: #99CC99;
+	color: #CC0033;
+}
+#span_select3:hover {
+	/*鼠标移动时的颜色变化*/
+	background-color: burlywood;
+}
+#span_select4{
+	background: #CCCCCC;
+	color: #CC0033;
+	
+}
+#span_select4:hover {
+	/*鼠标移动时的颜色变化*/
+	background-color: burlywood;
+}
+#span_select5{
+	background: #CCFFFF;
+	color: #CC0033;
+}
+#span_select5:hover {
+	/*鼠标移动时的颜色变化*/
+	background-color: burlywood;
+}
+#span_select6{
+	background: #CCCCFF;
+	color: #CC0033;
+}
+#span_select6:hover {
+	/*鼠标移动时的颜色变化*/
+	background-color: burlywood;
+}
+#span_select7{
+	background: #FF6666;
+	color: #CC0033;
+}
+#span_select7:hover {
+	/*鼠标移动时的颜色变化*/
+	background-color: burlywood;
+}
+#span_select8{
+	background: #CCFF99;
+	color: #CC0033;
+}
+#span_select8:hover {
+	/*鼠标移动时的颜色变化*/
+	background-color: burlywood;
+}
+
+
+
+.box_title {
+	display: flex;
+	width: auto;
+	writing-mode: vertical-lr;
+	padding: 10px 5px 10px 5px;
+	font-size: 20px;
+	align-items: center;
+
+	justify-content: center;
+}
+
+.box_title_line {
+	width: 1px;
+	height: auto;
+	align-items: stretch;
+	align-content: stretch;
+	background: fuchsia;
+}
+
+
+.box_content {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	height: auto;
+}
+
+.box_content_div {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: 5px;
+	height: auto;
+}
+
+
+.box_content_div_finish {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: 5px;
+	height: auto;
+	margin-bottom: 10px;
+}
+
+.box_content_class {
+	width: 100%;
+	display: flex;
+	margin-top: 10px;
+	justify-content: center;
+	font-size: 18px;
+	background: url(../img/icon_line.png);
+}
+
+ .box_content_class_line_up{
+	margin-top: 10px;
+	width: 100%;
+}
+
+/* .box_content_class_line{
+	width: 100%;
+	height: 1px;
+    background: fuchsia;
+} */
+#box {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+
+}
+.box_a {
+	margin-top: 15px;
+	width: 20%;
+	display: flex;
+	align-content: center;
+	font-size: 16px;
+}
+
+#box2 {
+	width: 100%;
+	
+	height: auto;
+	display: none;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+#box3{
+	width: 100%;
+
+	height: auto;
+	display: none;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+#box4{
+	width: 100%;
+
+	height: auto;
+	display: none;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+#box5{
+	width: 100%;
+
+	height: auto;
+	display: none;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+#box6{
+	width: 100%;
+	
+	height: auto;
+	display: none;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+#box7{
+	width: 100%;
+
+	height: auto;
+	display: none;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+#box8{
+	width: 100%;
+
+	height: auto;
+	display: none;
+	flex-direction: row;
+	flex-wrap: nowrap;
 }
