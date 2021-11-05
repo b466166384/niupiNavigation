@@ -1,0 +1,18 @@
+.nav_div_one {
+	width: 95%;
+	display: flex;
+	flex: row;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.nav_div_one_a {
+	display: flex;
+	align-content: center;
+	text-decoration: none;
+	margin-top: 15px;
+}
+
+.img {
+	margin-left: 25px;
+}
