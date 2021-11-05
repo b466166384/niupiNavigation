@@ -9,14 +9,21 @@
 	<body>
 		<input id="input" type="text">
 		<button onclick="btn()">三次解析</button>&nbsp;
+		<button onclick="jaHentaiCos()">ja.hentai</button>&nbsp; 
 		<button onclick="nsfwPicCom()">NsfwPicx</button>&nbsp;
 		<button onclick="xsnvshen()">秀色女神</button>&nbsp;
 		<button onclick="dongManbtn()">二次解析</button>&nbsp;
 		<button onclick="showSamllBtn()">预览图片</button>&nbsp;
 		<button onclick="showBtn()">大图查看</button>&nbsp;
 		<button onclick="hideBtn()">图片地址</button>&nbsp;
-
 		<button onclick="clearBtn()">清空页面</button>
+		<br />
+		<div>
+			<input  id="input_open" type="number"/>开盘价
+			<input  id="input_close" type="number"/>收盘价
+			<button onclick="calculate()">涨幅百分比</button>
+			<span id="calculate_text"></span>
+		</div>
 		<br />
 		<div id="shu">
 
