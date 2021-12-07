@@ -18,27 +18,35 @@
 			<!-- 搜索框 -->
 			<div id="baidu_div">
 				<div style="width: 50%; height: auto;" id="body_div">
-					<a href="https://www.baidu.com/" target="_blank" >
-						<img  style="width: 60px; height: 60px;" src="https://dss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=3298565400,595791570&fm=58">
-					</a>
-					<!-- 多吉搜索 -->
-					<!-- <form action="https://www.dogedoge.com/results" target="_blank" style="width: 100%; display: flex; flex-direction: row;">
-						<span style="width: 100%; height: 60px; display: flex; align-items: center; margin-left: 15px;">
-							<input class="Selectbg" style="width: 100%; height: 30px;" name="q" />
-						</span>
-						<span style="width: auto; height: 60px; display: flex; align-items: center; margin-left: 15px;">
-							<button style="width: 55px; height: 30px;">搜索</button>
-						</span>
-					</form> -->
+					<span id="img_span">
+						<img id="img_google" onclick="img_google()" style="width: 30px; height: 30px;" src="http://seopic.699pic.com/photo/40002/5308.jpg_wh1200.jpg"/>
+					    <img id="img_baidu" onclick="img_baidu()" style="width: 60px; height: 60px;margin-left: 15px;" src="https://dss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=3298565400,595791570&fm=58"/>
+					</span>	
+					
+					<!-- google搜索 -->
+					<div id="form_google" hidden="none" style="width: 100%">
+						<form  action="https://www.google.com/search" target="_blank" style="width: 100%; display: flex; flex-direction: row;">
+							<span style="width: 100%; height: 60px; display: flex; align-items: center; margin-left: 15px;">
+								<input class="Selectbg" style="width: 100%; height: 30px;" name="q" />
+							</span>
+							<span style="width: auto; height: 60px; display: flex; align-items: center; margin-left: 15px;">
+								<button style="width: 55px; height: 30px;">搜索</button>
+							</span>
+						</form> 
+					</div>
+					 
 					<!-- 百度搜索 -->
-					<form action="https://www.baidu.com/s" target="_blank" style="width: 100%; display: flex; flex-direction: row;">
-						<span style="width: 100%; height: 60px; display: flex; align-items: center; margin-left: 15px;">
-							<input class="Selectbg" style="width: 100%; height: 30px;" name="wd" />
-						</span>
-						<span style="width: auto; height: 60px; display: flex; align-items: center; margin-left: 15px;">
-							<button style="width: 55px; height: 30px;">搜索</button>
-						</span>
-					</form>
+					<div id="form_baidu"  style="width: 100%">
+						<form  action="https://www.baidu.com/s" target="_blank" style="width: 100%; display: flex; flex-direction: row;">
+							<span style="width: 100%; height: 60px; display: flex; align-items: center; margin-left: 15px;">
+								<input class="Selectbg" style="width: 100%; height: 30px;" name="wd" />
+							</span>
+							<span style="width: auto; height: 60px; display: flex; align-items: center; margin-left: 15px;">
+								<button style="width: 55px; height: 30px;">搜索</button>
+							</span>
+						</form>
+					</div>
+					
 				</div>
 			</div>
 

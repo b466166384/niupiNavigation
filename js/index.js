@@ -40,6 +40,33 @@ function setLogoImg() {
 	}
 };
 
+
+function img_google(){
+	var div = document.getElementById("img_google");
+	  div.style.cssText='width:60px;height:60px;margin-left: 15px;';
+	  var div = document.getElementById("img_baidu");
+	    div.style.cssText='width:30px;height:30px; ';
+		var div = document.getElementById("img_span");
+		//图标反转换位置
+		  div.style.cssText='display: flex;flex-direction: row-reverse;align-items: center;';
+		  //搜索引擎切换
+		    document.getElementById("form_baidu").style.display="none"
+			document.getElementById("form_google").style.display="block"
+		
+};
+function img_baidu(){
+	var div = document.getElementById("img_baidu");
+	  div.style.cssText='width:60px;height:60px;margin-left: 15px;';
+	  var div = document.getElementById("img_google");
+	    div.style.cssText='width:30px;height:30px;';
+		var div = document.getElementById("img_span");
+		//图标反转换位置
+		  div.style.cssText='display: flex;flex-direction: row;align-items: center;';
+		   //搜索引擎切换
+		  document.getElementById("form_google").style.display="none"
+		  document.getElementById("form_baidu").style.display="block"
+};
+
 function select1(){
 	document.getElementById("box").style.display="flex";
 	document.getElementById("box2").style.display="none";
