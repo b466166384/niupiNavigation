@@ -16,3 +16,76 @@
 .img {
 	margin-left: 25px;
 }
+
+
+
+.div_select{
+	display: flex;
+	flex-direction:row ;
+	flex-wrap: nowrap;
+	width: 100%;
+
+}
+
+.span_select_ren{
+	display: flex;
+	width: 33.3%;
+	height: 50px;
+	margin-top: 15px;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	font-size: 17px;	
+}
+#span_select_ren1{
+	background: #fad513;
+	color: #ffffff;
+}
+#span_select_ren1:hover {
+	/*鼠标移动时的颜色变化*/
+	background-color: burlywood;
+}
+#span_select_ren2{
+	background: #ad0793;
+	color: #000000;
+}
+#span_select_ren2:hover {
+	/*鼠标移动时的颜色变化*/
+	background-color: burlywood;
+}
+#span_select_ren3{
+	background: #ad0707;
+	color: #000000;
+}
+#span_select_ren3:hover {
+	/*鼠标移动时的颜色变化*/
+	background-color: burlywood;
+}
+
+
+#box_ren {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+
+}
+
+#box_ren2 {
+	width: 100%;
+	
+	height: auto;
+	display: none;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+#box_ren3{
+	width: 100%;
+
+	height: auto;
+	display: none;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}

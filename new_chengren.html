@@ -1,0 +1,1438 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/index.css" />
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="js/cookie.js"></script>
+	</head>
+	<body>
+		
+
+		
+
+
+			<!-- 选择栏 -->
+			<div class="div_select">
+				<span class="span_select" id="span_select1" onclick="select1()">工作导航</span>
+				<span class="span_select" id="span_select2" onclick="select2()">影视动漫</span>
+				<span class="span_select" id="span_select3" onclick="select3()">休闲娱乐</span>
+				<span class="span_select" id="span_select4" onclick="select4()">漫画图片电子书</span>
+				<span class="span_select" id="span_select5" onclick="select5()"> 购物财经</span>
+				<span class="span_select" id="span_select6" onclick="select6()">外网导航</span>
+				<span class="span_select" id="span_select7" onclick="select7()">软件推荐</span>
+				<span class="span_select" id="span_select8" onclick="select8()">其他工具</span>
+			</div>
+
+
+			<!-- 工作导航 -->
+			<div id="box">
+				<!-- <div class="box_title">
+					工作导航
+				</div>
+				<div class="box_title_line">
+				</div> -->
+				<div class="box_content">
+					<span class="box_content_class">
+						常用工具
+					</span>
+					<span class="box_content_class_line"></span>
+					<div class="box_content_div">
+						<a href="https://fanyi.baidu.com/?aldtype=16047#auto/zh" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://fanyi.baidu.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">百度翻译</span>
+						</a>
+						<a href="https://kaifa.baidu.com/home" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="./img/sou.png">
+							<span style="color:black; margin-left: 5px;">开发者搜索</span>
+						</a>
+						<a href="https://www.json.cn" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://www.json.cn/favicon.ico">
+							<span style="color:black; margin-left: 5px;">json解析</span>
+						</a>
+						<a href="https://jsontodart.zariman.dev/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://jsontodart.zariman.dev/favicon.ico">
+							<span style="color:black; margin-left: 5px;">dart生成Model类</span>
+						</a>
+						<a href="jiexi.html" target="_blank" class="box_a">
+							<img width="24" height="24" class="img"
+								src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2727631476,1029784136&fm=26&gp=0.jpg">
+							<span style="color:black; margin-left: 5px;">JKF解析</span>
+						</a>
+						<a href="https://www.iconfont.cn/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img"
+								src="https://img.alicdn.com/imgextra/i2/O1CN01ZyAlrn1MwaMhqz36G_!!6000000001499-73-tps-64-64.ico">
+							<span style="color:black; margin-left: 5px;">IconFont图标</span>
+						</a>
+						<a href="https://bbs.fobshanghai.com/pantone-color.html" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://bbs.fobshanghai.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">pantone-color色卡</span>
+						</a>
+						<a href="https://materialui.co/colors" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://materialui.co/favicon.gif">
+							<span style="color:black; margin-left: 5px;">系统颜色</span>
+						</a>
+						<a href="https://tool.oschina.net/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://tool.oschina.net/favicon.ico">
+							<span style="color:black; margin-left: 5px;">在线工具</span>
+						</a>
+						<a href="https://www.atool99.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://www.atool99.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">AtOOL在线工具</span>
+						</a>
+						<a href="https://it7.org/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img"
+								src="https://it7.org/content/images/system/favicon_1535684525322_db2657.png">
+							<span style="color:black; margin-left: 5px;">图片外链</span>
+						</a>
+						<a href="https://www.element3ds.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://www.element3ds.com/favicon.ico" />
+							<span style="color:black; margin-left: 5px;">微元素</span>
+						</a>
+					</div>
+
+					<span class="box_content_class_line_up"></span>
+					<span class="box_content_class">学习网站</span>
+					<span class="box_content_class_line"></span>
+					<div class="box_content_div">
+						<a href="https://home.cnblogs.com/blog/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://home.cnblogs.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">博客园</span>
+						</a>
+						<a href="https://www.51zxw.net/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://www.51zxw.net/favicon.ico" />
+							<span style="color:black; margin-left: 5px;">我要自学网</span>
+						</a>
+						<a href="https://leetcode-cn.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img"
+								src="https://static.leetcode-cn.com/cn-assets/icons/favicon-32x32.png" />
+							<span style="color:black; margin-left: 5px;">力扣</span>
+						</a>
+						<a href="https://www.w3school.com.cn/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img"
+								src="https://www.w3school.com.cn/ui2019/logo-16-red.png" />
+							<span style="color:black; margin-left: 5px;">w3school</span>
+						</a>
+					</div>
+
+					<span class="box_content_class_line_up"></span>
+					<span class="box_content_class">其他</span>
+					<span class="box_content_class_line"></span>
+					<div class="box_content_div_finish">
+						<a href="https://github.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://github.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">GitHub</span>
+						</a>
+						<a href="https://gitee.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://gitee.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">码云</span>
+						</a>
+						<a href="https://coding.net/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img"
+								src="https://dn-coding-net-production-static.codehub.cn/platform/favicon.ico">
+							<span style="color:black; margin-left: 5px;">CODING</span>
+						</a>
+						<a href="https://mvnrepository.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img"
+								src="https://mvnrepository.com/assets/images/7080b8b0f6f48e6fbaffd5f9d85fcc7f-favicon.ico">
+							<span style="color:black; margin-left: 5px;">Maven库</span>
+						</a>
+						<a href="https://trello.com" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://trello.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">Trello</span>
+						</a>
+						<a href="https://www.bmob.cn/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://assets2016.bmob.cn/img/favicon.ico" />
+							<span style="color:black; margin-left: 5px;">Bmob后端云</span>
+						</a>
+						<a href="https://www.juhe.cn/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://www.juhe.cn/favicon.ico" />
+							<span style="color:black; margin-left: 5px;">聚合数据</span>
+						</a>
+						<a href="https://convertio.co/zh/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img"
+								src="https://static.convertio.co/img/apple-touch-icon-76x76-precomposed.png" />
+							<span style="color:black; margin-left: 5px;">convertio格式转换</span>
+						</a>
+					</div>
+
+				</div>
+			</div>
+			<!-- 影视动漫 -->
+			<div id="box2">
+				<!-- <div class="box_title">
+				影视动漫
+			</div>
+			<div class="box_title_line">
+			</div> -->
+				<div class="box_content">
+					<span class="box_content_class">
+						直播
+					</span>
+					<span class="box_content_class_line"></span>
+					<div class="box_content_div">
+						<a href="http://www.douyu.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://static.touduyu.com/moresite/douyu.svg">
+							<span style="color:black; margin-left: 5px;">斗鱼直播</span>
+						</a>
+						<a href="http://www.huya.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://static.touduyu.com/moresite/huya.svg">
+							<span style="color:black; margin-left: 5px;">虎牙直播</span>
+						</a>
+					</div>
+
+					<span class="box_content_class_line_up"></span>
+					<span class="box_content_class">视频</span>
+					<span class="box_content_class_line"></span>
+					<div class="box_content_div">
+						<a href="http://www.bilibili.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://static.touduyu.com/moresite/bilibili.svg">
+							<span style="color:black; margin-left: 5px;">哔哩哔哩</span>
+						</a>
+						<a href="http://www.acfun.cn/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="http://www.acfun.cn/favicon.ico">
+							<span style="color:black; margin-left: 5px;">AcFun</span>
+						</a>
+						<a href="https://v.qq.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://static.touduyu.com/moresite/tengxunshipin.svg">
+							<span style="color:black; margin-left: 5px;">腾讯视频</span>
+						</a>
+						<a href="https://www.youku.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img"
+								src="https://img.alicdn.com/tfs/TB1WeJ9Xrj1gK0jSZFuXXcrHpXa-195-195.png">
+							<span style="color:black; margin-left: 5px;">优酷视频</span>
+						</a>
+						<a href="https://www.iqiyi.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://static.touduyu.com/moresite/iqiyi.svg">
+							<span style="color:black; margin-left: 5px;">爱奇艺视频</span>
+						</a>
+						<a href="https://tv.sohu.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://static.touduyu.com/moresite/sohutv.svg">
+							<span style="color:black; margin-left: 5px;">搜狐视频</span>
+						</a>
+						<a href="https://launchpadxm.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://launchpadxm.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">Launchpad小梦社区</span>
+						</a>
+						<a href="http://www.haosevr.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="http://www.haosevr.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">VR视频</span>
+						</a>
+					</div>
+
+					<span class="box_content_class_line_up"></span>
+					<span class="box_content_class">动漫</span>
+					<span class="box_content_class_line"></span>
+					<div class="box_content_div">
+						<a href="http://www.zzzfun.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="http://www.zzzfun.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">ZzzFun动漫视频</span>
+						</a>
+						<a href="https://www.agefans.tv/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://www.agefans.tv/favicon.ico">
+							<span style="color:black; margin-left: 5px;">AGE动漫</span>
+						</a>
+						<a href="http://www.xxdm5.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="http://www.xxdm5.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">动画片大全</span>
+						</a>
+						<a href="https://www.88kan.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://www.88kan.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">88影视网</span>
+						</a>
+						<a href="http://x88ys.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="http://x88ys.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">新88影视网</span>
+						</a>
+						<a href="http://www.bimibimi.me/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="http://www.bimibimi.me/favicon.ico">
+							<span style="color:black; margin-left: 5px;">哔咪动漫</span>
+						</a>
+						<a href="https://idanmu.at/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img"
+								src="https://idanmu.im/wp-content/uploads/2016/01/8bdb996aaed8a68312da9d2e75495e3a-32x32.png">
+							<span style="color:black; margin-left: 5px;">爱弹幕</span>
+						</a>
+					</div>
+
+
+
+					<span class="box_content_class_line_up"></span>
+					<span class="box_content_class">音乐</span>
+					<span class="box_content_class_line"></span>
+					<div class="box_content_div">
+						<a href="http://www.yinyuetai.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="http://www.yinyuetai.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">音悦Tai</span>
+						</a>
+						<a href="https://fm.douban.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img"
+								src="https://img3.doubanio.com/f/fm/55cc7ebd1777d5101a82d7d6ce47ffc5e114131d/pics/fm/san_favicon.ico">
+							<span style="color:black; margin-left: 5px;">豆瓣FM</span>
+						</a>
+						<a href="https://music.163.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img"
+								src=" https://static.touduyu.com/icon/wangyiyunyinyue.png ">
+							<span style="color:black; margin-left: 5px;">网易云音乐</span>
+						</a>
+						<a href="https://www.kugou.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://static.touduyu.com/moresite/kugou.svg">
+							<span style="color:black; margin-left: 5px;">酷狗音乐</span>
+						</a>
+						<a href="https://www.missevan.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img"
+								src="https://www.missevan.com/images/index/favicon.ico">
+							<span style="color:black; margin-left: 5px;">猫耳FM</span>
+						</a>
+					</div>
+
+
+					<span class="box_content_class_line_up"></span>
+					<span class="box_content_class">资源网站</span>
+					<span class="box_content_class_line"></span>
+					<div class="box_content_div_finish">
+						<a href="https://www.dytt8.net/index.htm" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://www.dytt8.net/favicon.ico">
+							<span style="color:black; margin-left: 5px;">电影天堂</span>
+						</a>
+						<a href="https://www.meijutt.tv/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://www.meijutt.tv/favicon.ico">
+							<span style="color:black; margin-left: 5px;">美剧天堂</span>
+						</a>
+					</div>
+
+				</div>
+			</div>
+
+
+
+
+			<!-- 休闲娱乐 -->
+			<div id="box3">
+				<!-- <div class="box_title">
+				休闲娱乐
+			</div>
+			<div class="box_title_line">
+			</div> -->
+				<div class="box_content">
+					<span class="box_content_class">
+						三次元
+					</span>
+					<span class="box_content_class_line"></span>
+					<div class="box_content_div">
+						<a href="https://www.jianshu.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://www.jianshu.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">简书</span>
+						</a>
+						<a href="https://weibo.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://weibo.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">新浪微博</span>
+						</a>
+						<a href="https://tieba.baidu.com/index.html" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://tieba.baidu.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">百度贴吧</span>
+						</a>
+						<a href="https://www.hupu.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://www.hupu.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">虎扑</span>
+						</a>
+						<a href="https://www.zhihu.com" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://www.zhihu.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">知乎</span>
+						</a>
+						<a href="https://www.douban.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://www.douban.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">豆瓣</span>
+						</a>
+						<a href="https://bbs.tianya.cn/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://bbs.tianya.cn/favicon.ico">
+							<span style="color:black; margin-left: 5px;">天涯论坛</span>
+						</a>
+						<a href="http://jandan.net/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="http://jandan.net/favicon.ico">
+							<span style="color:black; margin-left: 5px;">煎蛋</span>
+						</a>
+					</div>
+
+					<span class="box_content_class_line_up"></span>
+					<span class="box_content_class">二次元</span>
+					<span class="box_content_class_line"></span>
+					<div class="box_content_div">
+						<a href="https://bbs.nga.cn/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://bbs.nga.cn/favicon.ico">
+							<span style="color:black; margin-left: 5px;">NGA论坛</span>
+						</a>
+						<a href="https://bcy.net" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://bcy.net/favicon.ico">
+							<span style="color:black; margin-left: 5px;">半次元</span>
+						</a>
+						<a href="http://www.lofter.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="http://www.lofter.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">Lofter乐乎</span>
+						</a>
+						<a href="https://www.acgns.org" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="http://www.moeli.net/favicon.ico">
+							<span style="color:black; margin-left: 5px;">幻天领域</span>
+						</a>
+						<a href="https://www.guaiguaizhanhao.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src='data:img/jpg;base64,AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAAAAAAAAAAAAAAAAA
+AAAAAAA/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ojf/Pzw0/z45Ov8/Ozb/
+QTs2/z47Nv89PDj/Pzs2/z87Nv9BOjf/QDo1/z87Nv8+Ozb/Pjs3/z87Nv8/Ozb/Pzs2/z87Nv8/
+Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87
+Nv8+PDT/PD0z/z89Nf8/Ojn/QTs2/0E7Nv8/Ozb/Pjw0/z06Nf8+Ozf/Pzs2/0A8N/8+PDT/Pzs2
+/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/
+Pzs2/z87Nv9AOzj/Pzs2/z45Nv9BOjf/Pzs2/z88N/8+Ozb/Pjw0/z86N/8+OjX/Pzs2/z86N/89
+OzP/QDs4/0E7Nv8+Ozf/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87
+Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z46Nf9APDf/Pjs2/z88NP8+Ozb/Pjs3/z87Nv8+OTj/QTo3
+/0A7OP8/PDT/Pjk2/0E6N/9AOzL/Pzs2/z48NP8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/
+Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pjs2/z86N/8/Ozb/Pzs2/z87Nv8/
+Ozb/Pzs2/z47N/88PDb/QTs2/z87Nv89OjX/Qjo6/0A8N/89OjX/Pjk2/z87Nv8/Ozb/Pzs2/z87
+Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ojf/Pjo1
+/0I8N/8+OjX/Qjs4/z87Nv88PDb/Qzwz/0E7NP8+Ozf/Pjs3/z87Nv8+Ozf/PTo2/0A8N/8/PDT/
+Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/
+Ozb/Pzs2/z88NP8+Ojn/Pjsz/z07Ov8+OjX/Pzs2/0E7NP+zwT7/sLlB/1tZOv8+PDT/QTs2/0E7
+NP8/Ojf/Pzo3/z48NP8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2
+/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/QDo1/z47Nv9BOzb/Pjsz/0I8N/8+Ozf/Pzs2/8fPQv/N20D/
+y9ZE/5OYPf9BOzb/Pjs2/z88NP8/Ozb/Pzo5/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/
+Ozb/Pzo3/0A7Ov8/Ojf/Pzs2/z47Nv8+Ozb/Pzo3/0A5Nv88Ozf/PTo1/0A8N/9CPDX/dng8/7C5
+QP/F0kH/zddE/87ZQ//M2EL/zdpC/6CmQf8/PTP/Pjs2/z05OP8/Ozb/Pzs2/z47N/8/PTP/Pzs2
+/0A9Nf8+Ojn/Pzo5/0E7Nv8+Ozb/PTsz/z88NP9CPDf/Pjk2/z88OP89OzP/Pjs2/0A6M/9COzj/
+RT84/7G7P//O2kL/zNhC/87aQv/L2kL/zdhC/8zYQv/N2UH/zNhC/4mMPP8+PDT/Pz40/0A5Nv9A
+PDf/Pjk2/z88OP8/Ojf/QDoz/z88OP88PTT/Pjk2/z87Nv8+Ozb/PTo2/z45Nv9APTX/QTs2/z86
+Of8+PDT/QTo3/z07M/+7w0D/zdpC/8zZQf/O2kL/zdhC/83ZQ//N2UH/zdpC/83aQv/O2EX/ytZC
+/1xdNv93dzv/mqU9/4aMPf9eXTv/Pjk2/z45Nv8/Ojf/Pjk2/z87Nv9CPDX/Pjs2/z46Nf9BOjf/
+Pzo3/z86N/9BOjf/QTs2/z47Nv8/PDT/kZc+/8zZQf/N2UH/zNlB/8rYRP/O2kL/zNlB/87ZQ//K
+2UH/zNlB/83ZQf/O2UP/lpw9/8HKRP/O2kL/y9pC/8rYRP+wuj7/fYA7/z88NP8/Ojf/Pzw0/z47
+N/9BOjf/QDw3/z48NP8+Ozb/Pjw0/0A9Nf89Ojb/Pjs2/0A8N//G0j7/0NlC/83YQv/O2UP/zddE
+/87ZQ//N2UH/zdhC/83aQv/P2EL/ztpA/8zaP/+7xkD/pKg+/87aQv/N10T/ztpA/8zYRP/L2kL/
+p64//2BbOv8+OzP/Qjs4/z88NP89OjX/Pjs2/0E7Nv9COzj/PTo1/z88N/9AODj/WlY5/8zYQv/N
+2UX/zdpC/87XQP/N20D/zNdB/8vbQP/N2EL/zdlD/83ZQf/M2EL/zNo//8jRRP+Olz3/zdpC/83Z
+Qf/N2UH/zttD/8zYQv/O2UP/w9A//32AO/89OjX/QDsy/z86N/9APDf/Pzs2/z86Of9UVDb/jZY8
+/7i+Qf93ezr/zNhC/8vbQP/P2EL/zttD/4CIO/9aVjn/x9FB/87ZQ//L10H/zdlD/8rZQf/N20D/
+zNdB/4qSO//N2UH/y9pD/8rZQf/M2EL/zdlB/8zZQf/N2EL/ytlC/42QO/8+Ozb/Pjs3/z07M/9B
+Ojf/eXs5/8rXRf/P2EH/ztpC/4qOPP/N2UH/zdhC/83ZQ//EzUD/Qjw3/z06Nf+Ynz7/zdk//83Z
+Q//P2EL/zdhC/87YRf/M1EH/jZI9/8rZQv/M2UH/0NlD/8/YQf/O2UP/zdhC/87aQv/N20D/zNZE
+/z87Nv8+Ozb/QDs4/5mgP//N10X/zNo//8vaQv/N2EL/i5I9/8LNQf+GiDz/y9dB/8zYQv/F0z//
+wcxA/8rUQv/M2EL/w8w//8LJQv/K2UL/zdpC/8PMP/+epD//zdlD/83ZQ//N2EL/t8BB/4eNPP9i
+ZTj/X183/3Z4PP9zcTv/Pjk2/0E7Nv91dzv/yNZC/83ZQf/O2EX/zddE/87ZQ/+lq0D/tbxD/8HJ
+QP/M2UH/y9dD/83aQv/O2UP/zNhC/83aQv+bpDz/v8lB/83YQv/M2ET/oKk7/21vO/+rsj//lJw9
+/1pYOf8+PTP/Pjk2/0Q7OP8+OjX/Pjs2/z87Nv8+PDT/QTk5/7/JQf/N2UH/ztpC/8/YQv/N2kL/
+zNlB/8jXQP97fDz/zNhC/83XRP/N2UX/z9k//8zYQv/L2UX/zNhE/87aQv/M2UH/ztlD/83XRP9a
+WDn/Pjs2/z88NP8/Ozb/Pzs2/z47Nv8+Ojn/Pjs2/z86N/8+OzP/Pjs2/0E7Nv+bpDz/y9pC/87a
+Qv/N2EL/zdpC/87ZQ//N2kL/ytlB/6uzPv+RmD3/y9pC/8zYQv/M2UH/ztlD/8zaP//N2UP/zdhC
+/9DaQP/M2UH/gYQ8/z88OP9AOjX/QDs4/z47N/9AOjP/QDk2/z86N/8+OjX/Qjs4/0I8N/8+OTj/
+VVE4/8jRRP/M2j//z9hB/83ZQ//M2EL/zdpC/8zZQf/O2UP/nKE+/z86N/+QlDv/zNhC/87YRf/N
+2kL/zNhC/83ZQf/L2UX/xtRA/4SEPv9PTzf/Xl84/0pDOv9BOzb/Pzw0/z86Of9AOzj/Pjsz/z87
+Nv8/PDf/PTo1/z88NP+Dhj7/zdlB/8zYQv/L2kL/zNdB/8LPQ//AxkP/qbI+/3p+PP9AOzj/Pjs3
+/z87Nv9TUjj/lpk9/7C7P/+7w0D/rbY+/5+mPv+Slj3/jJI7/4qOPP+0v0H/foI7/z48NP8/Ojf/
+Pzs2/0E6N/8/Ozb/Pz01/z06Nf8/Ojn/QDo1/8PTQP/M2UH/w8xA/32DPP9PSDf/PT03/z46Nf9A
+OTb/Pzw0/z46Nf9BOjf/Pzw0/0A8N/8/Ozb/Ozo2/0A8N/94eDz/iZI8/4CCPP+FiT7/naI//4WL
+Ov9DQjj/Pjs3/z86N/8+PDT/Pjw0/z47M/8/Ojn/Pzs2/z86N/8/Ojf/qbI+/6mwQf8/Ozb/QDw3
+/z87Nv8/Ozb/Pzw0/z47N/8+Ozf/Pzw4/z87Nv8/Ojn/Pjk2/0E7Nv8/Ozb/VlI5/7rCP/+aoj3/
+naM+/4SKPf9WUzf/Pzs2/z46Nf8/Ojf/Pjo1/z87Nv8/Ojf/Pzw0/z86Of8/Ozb/Pzw0/z47Nv8/
+Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87
+Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2
+/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/
+Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/
+Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87
+Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2
+/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/
+Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/
+Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87
+Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2
+/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/
+Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/
+Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87
+Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2
+/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/
+Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/
+Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87
+Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/Pzs2/z87Nv8/Ozb/AAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAA='/>
+							<span style="color:black; margin-left: 5px;">幻想次元</span>
+						</a>
+						<a href="https://sjhs301.github.io/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img"
+								src="https://kuaishangche.club/wp-content/themes/wdlog/favicon.ico">
+							<span style="color:black; margin-left: 5px;">司机会所</span>
+						</a>
+						<a href="https://mitaku.net/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img"
+								src="https://mitaku.net/wp-content/uploads/2020/05/cropped-Mitaku-Logo-1-32x32.jpg">
+							<span style="color:black; margin-left: 5px;">mitaku</span>
+						</a>
+						<a href="https://ja.hentai-cosplays.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://thumbs.dreamstime.com/b/ja%E5%88%9D%E5%A7%8B%E5%AD%97%E6%AF%8D%E7%9F%A2%E9%87%8F%E5%9B%BE%E5%BE%BD%E6%A0%87%E5%9B%BE%E6%A0%87-199273347.jpg">
+							<span style="color:black; margin-left: 5px;">ja.hentai-cosplay</span>
+						</a>
+						<a href="https://bbs.a9vg.com/forum.php" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://bbs.a9vg.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">A9VG电玩部落</span>
+						</a>
+						<a href="http://cosersuki.me/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://cosersuki.xyz/favicon.ico">
+							<span style="color:black; margin-left: 5px;">Cosersuki</span>
+						</a>
+						<a href="https://bbs.saraba1st.com/2b/forum.php" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://bbs.saraba1st.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">STAGE1论坛</span>
+						</a>
+						<a href="https://www.hyacg.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://www.hyacg.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">HYACG</span>
+						</a>
+					</div>
+
+					<span class="box_content_class_line_up"></span>
+					<span class="box_content_class">游戏</span>
+					<span class="box_content_class_line"></span>
+					<div class="box_content_div">
+						<a href="https://www.ali213.net" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://www.ali213.net/favicon.ico">
+							<span style="color:black; margin-left: 5px;">游侠网</span>
+						</a>
+						<a href="https://www.3dmgame.com" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://www.3dmgame.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">3DMGAME</span>
+						</a>
+						<a href="https://www.tianshie.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://www.tianshie.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">天使二次元（AVG-Game）</span>
+						</a>
+						<a href="http://www.lianaiyx.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://hacg.tv/favicon.ico">
+							<span style="color:black; margin-left: 5px;">恋爱游戏网</span>
+						</a>
+						<a href="https://www.nexusmods.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://www.nexusmods.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">NexusMods</span>
+						</a>
+						<a href="http://www.4399.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="http://www.4399.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">4399小游戏</span>
+						</a>
+						<a href="https://www.2048.org/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://www.2048.org/favicon.ico">
+							<span style="color:black; margin-left: 5px;">2048游戏</span>
+						</a>
+						<a href="https://www.jgg18.xyz/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://www.jgg18.xyz/favicon.ico">
+							<span style="color:black; margin-left: 5px;">大人游戏</span>
+						</a>
+
+					</div>
+
+
+
+					<span class="box_content_class_line_up"></span>
+					<span class="box_content_class">其他</span>
+					<span class="box_content_class_line"></span>
+					<div class="box_content_div_finish">
+						<a href="https://www.yahoo.co.jp/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://www.yahoo.co.jp/favicon.ico">
+							<span style="color:black; margin-left: 5px;">yaHoo日本</span>
+						</a>
+						<a href="https://yandex.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img"
+								src="https://yastatic.net/iconostasis/_/KKii9ECKxo3QZnchF7ayZhbzOT8.png">
+							<span style="color:black; margin-left: 5px;">yandex俄罗斯</span>
+						</a>
+						<a href="http://www.ccguitar.cn/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="http://www.ccguitar.cn/favicon.ico">
+							<span style="color:black; margin-left: 5px;">虫虫吉他(吉他谱)</span>
+						</a>
+						<a href="https://paveldogreat.github.io/WebGL-Fluid-Simulation/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img"
+								src="https://paveldogreat.github.io/WebGL-Fluid-Simulation/logo.png">
+							<span style="color:black; margin-left: 5px;">炫酷paveldogreat</span>
+						</a>
+						<a href="https://sharkle.com" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://sharkle.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">盲盒sharkle</span>
+						</a>
+						<a href="https://thispersondoesnotexist.com" target="_blank" class="box_a">
+							<img width="24" height="24" class="img"
+								src="https://thispersondoesnotexist.com/favicon.png">
+							<span style="color:black; margin-left: 5px;">AI生成人脸照片</span>
+						</a>
+						<a href="https://pointerpointer.com" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://pointerpointer.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">鼠标指向图片</span>
+						</a>
+						<a href="https://toonme.com" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://toonme.com/favicon-16x16.png">
+							<span style="color:black; margin-left: 5px;">人脸卡通形象生成器</span>
+						</a>
+						<a href="https://iss-sim.spacex.com" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://iss-sim.spacex.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">国际空间站对接模拟器</span>
+						</a>
+
+						<a href="https://www.qmsjmfb.com" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://www.qmsjmfb.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">免费在线起名</span>
+						</a>
+						<a href="https://www.myenglishpages.com " target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://www.myenglishpages.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">免费在线学习英语</span>
+						</a>
+						<a href="https://cybermap.kaspersky.com " target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://cybermap.kaspersky.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">全球网络攻击</span>
+						</a>
+						
+					</div>
+				</div>
+			</div>
+
+
+
+
+			<!-- 漫画图片电子书 -->
+			<div id="box4">
+				<!-- <div class="box_title">
+				漫画图片电子书
+			</div>
+			<div class="box_title_line">
+			</div> -->
+				<div class="box_content">
+					<span class="box_content_class">
+						漫画
+					</span>
+					<span class="box_content_class_line"></span>
+					<div class="box_content_div">
+						<a href="http://www.weicomic.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="http://www.weicomic.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">创意漫画</span>
+						</a>
+					</div>
+
+					<span class="box_content_class_line_up"></span>
+					<span class="box_content_class">三次图片</span>
+					<span class="box_content_class_line"></span>
+					<div class="box_content_div">
+						<a href="https://magdeleine.co/browse/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img"
+								src='https://cdn.magdeleine.co/wp-content/themes/magdeleine/images/favicon.ico' />
+							<span style="color:black; margin-left: 5px;">Hand-picked图片(根据色系找图)</span>
+						</a>
+						<a href="https://1x.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://1x.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">1x图片网</span>
+						</a>
+						<a href="https://500px.com/popular" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://500px.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">500px图片网</span>
+						</a>
+						<a href="https://gratisography.com" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src='data:img/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAACWklEQVRoge2avW7CMBRGv4RWHTqA
+					xHt07lqpC+rCo7IgFiRW5r4HEgwMVQmpPlqjAPlxcq+NY/VIWaC+9kmvY/uS5HA45LAgSZLzdW/y
+					PD9fTaQ2ASmVpmkQcqTNeBoFTbAQsZGsHTkDhCpnaBpj5TchpWQTdVlW+mmf5AxVkjefhPKk7ELZ
+					2NPrPwh9zjVxnX1nmxjkDEXJC8GYuBDs87yrwjilMaXmNac18t6DcE2S2+xYu7LdAqsV8PkJ7PfA
+					1xeQZcBgADw9Ac/PwMsL8PYGjEZOhuBGcLMBFgtgvbZv8/oKTCbAeKw6FH1Bis3n3dt/fPyKKqEr
+					OJsBy6U8zvs7MJ3K48DyPGiFlhxhHMZTQEeQaaklZ2A8xhUiF+QDRTLn6mBcxhcgF1S4yy7jywS5
+					zrVZCrrA+OynIzJBLuI+EPQjE+QOxQeCfmSCu52ouY9+ZILf36LmPvqRCTrcp2shE+zBIVkm+Pio
+					NAx3/cgEh0NRcx/9yAR5WPWBoB+ZIE/iPhD0IxNkmYEncZcwvqCcId9sK56+XcSXC7KGwjKDCxhX
+					WKPROfDyLrPMoAnjKWSHXsmCNRQtScWazH9VrRNR10WLlFW2j0f+aOCvsp1lWR7rjy8kXrM/Umbo
+					kWkTIfQ6/QdtX4vqE8YpLX4QE8bnQjCWVKXHjSCJQbIoR26eon2ej2VjL10mru9CH6jKvsp1sE+S
+					dVOrdqFno9DnZNMYG3cyIT94bLLMaqtmJENJ2TbjeWgTlNe934xqe6OtBQ3FlPUpavpsm0WtBYud
+					mE5dvcxXXNe6To8f6tk7Mvcz5kMAAAAASUVORK5CYII=' />
+							<span style="color:black; margin-left: 5px;">gratisography图片</span>
+						</a>
+						<a href="https://www.foodiesfeed.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img"
+								src="https://www.foodiesfeed.com/wp-content/themes/foodiesfeed/library/images/favicon/favicon-32x32.png">
+							<span style="color:black; margin-left: 5px;">foodiesfeed图片</span>
+						</a>
+						<a href="https://www.shutterstock.com/zh/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://www.shutterstock.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">shutterstock</span>
+						</a>
+						<a href="https://www.cosersets.com/1/main#/1/main" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://www.cosersets.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">cosersets</span>
+						</a>
+					</div>
+
+					<span class="box_content_class_line_up"></span>
+					<span class="box_content_class">二次图片</span>
+					<span class="box_content_class_line"></span>
+					<div class="box_content_div">
+						<a href="https://acg.fi/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src='data:img/jpg;base64,AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZv6TAGb+qwBm/qsAZv6rAGb+qwBm/qsAZv6rAGb+
+qwBm/qsAZv6rAGb+qwBm/zgAAAAAAAAAAAAAAAAAAAAAAGb+kwBm/qsAZv6rAGb+qwBm/qsAZv6r
+AGb+qwBm/qsAZv6rAGb+qwBm/qsAZv84AAAAAAAAAAAAAAAAAAAAAABm/90AZv//AGb//wBm//8A
+Zv//AGb//wBm//8AZv//AGb//wBm//8AZv//AGb+VAAAAAAAAAAAAAAAAAAAAAAAZv/dAGb//wBm
+//8AZv//AGb//wBm//8AZv//AGb//wBm//8AZv//AGb//wBm/lQAAAAAAAAAAAAAAAAAAAAAAGX+
+lQBm//8AZv//AGb//wBm//8AZv//AGb//wBm//8AZv//AGb//wBm//8AZv5UAAAAAAAAAAAAAAAA
+AAAAAABm/90AZv//AGb//wBm//8AZv//AGb//wBm//8AZv//AGb//wBm//8AZv/jAGX/KAAAAAAA
+AAAAAAAAAAAAAAAAZv5UAGb//wBm//8AZv//AGb//wBm//8AZv//AGb//wBm//8AZv//AGb//wBm
+/90AAAAAAAAAAAAAAAAAZv9mAGb//wBm//8AZv//AGb//wBm//8AZv//AGb//wBm//8AZv//AGb/
+/wBm/80AAAAAAAAAAAAAAAAAAAAAAAAAAABm/zIAZv/rAGb//wBm//8AZv//AGb//wBm//8AZv//
+AGb//wBm//8AZv//AGb/6wBm/2YAZv9mAGb/ZgBl/6MAZv//AGb//wBm//8AZv//AGb//wBm//8A
+Zv//AGb//wBm//8AZv//AGX/TAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABm/80AZv//AGb//wBm
+//8AZv//AGb//wBm//8AZv//AGb//wBm//8AZv//AGb//wBm//8AZv//AGb//wBm//8AZv//AGb/
+/wBm//8AZv//AGb//wBm//8AZv//AGb//wBm//8AZv9EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AGX/qQBm//8AZv//AGb//wBm//8AZv//AGb//wBm//8AZv//AGb//wBm//8AZv//AGb//wBm//8A
+Zv//AGb//wBm//8AZv//AGb//wBm//8AZv//AGb//wBm//8AZv//AGb/yQBm/w4AAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAZv9EAGb//wBm//8AZv//AGb//wBm//8AZv//AGb//wBm//8AZv//AGb/
+/wBm//8AZv//AGb//wBm//8AZv//AGb//wBm//8AZv//AGb//wBm//8AZv//AGb//wBm//8AZv6h
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABm/zoAZv/1AGb//wBm//8AZv//AGb//wBm//8A
+Zv//AGb//wBm//8AZv/pAGb+VABm/lQAZv5UAGb/8wBm//8AZv//AGb//wBm//8AZv//AGb//wBm
+//8AZv//AGb//wBm/zIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABm/rsAZv//AGb/
+/wBm//8AZv//AGb//wBm//8AZv//AGb//wBm/90AAAAAAAAAAAAAAAAAZv/vAGb//wBm//8AZv//
+AGb//wBm//8AZv//AGb//wBm//8AZv/5AGb/MAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAGb+uwBm//8AZv//AGb//wBm//8AZv//AGb//wBm//8AZv//AGb/7wBm/zYAAAAAAAAAAABm
+/+8AZv//AGb//wBm//8AZv//AGb//wBm//8AZv//AGb//wBm/qsAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAZv8yAGb//wBm//8AZv//AGb//wBm//8AZv//AGb//wBm//8AZv//
+AGb/ZgAAAAAAZv92AGb//wBm//8AZv//AGb//wBm//8AZv//AGb//wBm//8AZv//AGb/agAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABm/h4AZv/dAGb//wBm//8AZv//AGb//wBm
+//8AZv//AGb//wBm//8AZv9mAAAAAABm/3YAZv//AGb//wBm//8AZv//AGb//wBm//8AZv//AGb/
+/wBm//8AZv8iAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABm/qsAZv//
+AGb//wBm//8AZv//AGb//wBm//8AZv//AGb//wBm/90AAAAAAGb/dgBm//8AZv//AGb//wBm//8A
+Zv//AGb//wBm//8AZv//AGb/3QBm/hYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAGb/hwBm//8AZv//AGb//wBm//8AZv//AGb//wBm//8AZv//AGb/7wAAAAAAZv+bAGb/
+/wBm//8AZv//AGb//wBm//8AZv//AGb//wBm//8AZf+ZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAZv8iAGb//wBm//8AZv//AGb//wBm//8AZv//AGb//wBm//8A
+Zv/7AGb/VgBm//8AZv//AGb//wBm//8AZv//AGb//wBm//8AZv//AGb//wBm/34AAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABm/x4AZv7xAGb//wBm//8AZv//AGb/
+/wBm//8AZv//AGb//wBm//8AZv92AGb//wBm//8AZv//AGb//wBm//8AZv//AGb//wBm//8AZv//
+AGb/EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABl/5kA
+Zv//AGb//wBm//8AZv//AGb//wBm//8AZv//AGb//wBm/4EAZv//AGb//wBm//8AZv//AGb//wBm
+//8AZv//AGb//wBm/7cAZv8GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAGX/mQBm//8AZv//AGb//wBm//8AZv//AGb//wBm//8AZv//AGb//wBm//8AZv//
+AGb//wBm//8AZv//AGb//wBm//8AZv//AGb/iQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZv8QAGb//wBm//8AZv//AGb//wBm//8AZv//AGb//wBm
+//8AZv//AGb//wBm//8AZv//AGb//wBm//8AZv//AGb//wBm//8AZv9IAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABm/xAAZv//AGb//wBm//8AZv//
+AGb//wBm//8AZv//AGb//wBm//8AZv//AGb//wBm//8AZv//AGb//wBm//8AZv//AGb//wAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGb/AgBm
+/5kAZv//AGb//wBm//8AZv//AGb//wBm//8AZv//AGb//wBm//8AZv//AGb//wBm//8AZv//AGb/
+/wBm//8AZf+JAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAGb/ZABm/rsAZv67AGb+uwBm/rsAZv67AGb+uwBm/rsAZv67AGb+uwBm/rsA
+Zv67AGb+uwBm/rsAZv67AGb+uwBm/1YAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////
+///////////////////////AB8AHwAfAB8AHwAfgA8AH4AOAD+AAAA/gAAAP8AAAD/ADgB/wA4Af
+8AOAH/gDgD/4A4A/+AGAP/gBAD/8AQB//AEAf/wAAH/8AAB//gAA//4AAP/+AAD//wAB////////
+//////////////8='/>
+							<span style="color:black; margin-left: 5px;">A区</span>
+						</a>
+						<a href="https://www.mikuclub.cc/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://www.mikuclub.cc/favicon.ico">
+							<span style="color:black; margin-left: 5px;">初音社</span>
+						</a>
+						<a href="https://anime-pictures.net/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://anime-pictures.net/favicon.ico">
+							<span style="color:black; margin-left: 5px;">anime动漫图片</span>
+						</a>
+						<a href="https://konachan.net/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://konachan.net/favicon.ico">
+							<span style="color:black; margin-left: 5px;">konachan壁纸</span>
+						</a>
+						<a href="https://lolibooru.moe/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src='https://lolibooru.moe/favicon.ico' />
+
+							<span style="color:black; margin-left: 5px;">lolibooru</span>
+						</a>
+						<a href="https://safebooru.org/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://safebooru.org/favicon.ico">
+							<span style="color:black; margin-left: 5px;">safebooru</span>
+						</a>
+						<a href="https://mmda.booru.org/index.php" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://mmda.booru.org/favicon.ico">
+							<span style="color:black; margin-left: 5px;">MMDArchive</span>
+						</a>
+					</div>
+
+
+
+					<span class="box_content_class_line_up"></span>
+					<span class="box_content_class">电子书</span>
+					<span class="box_content_class_line"></span>
+					<div class="box_content_div_finish">
+						<a href="https://www.jiumodiary.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img"
+								src="https://www.jiumodiary.com/images/apple/apple-57.png">
+							<span style="color:black; margin-left: 5px;">鸠摩电子书搜索</span>
+						</a>
+						<a href="http://haodoo.net/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="http://haodoo.net/favicon.ico">
+							<span style="color:black; margin-left: 5px;">好读</span>
+						</a>
+						<a href="http://cn.epubee.com/books/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="http://cn.epubee.com/icon.ico">
+							<span style="color:black; margin-left: 5px;">ePUBee</span>
+						</a>
+						<a href="https://bookfere.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://bookfere.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">书伴</span>
+						</a>
+						<a href="https://singlelogin.me/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://1lib.limited/favicon-16x16.svg?v=2">
+							<span style="color:black; margin-left: 5px;">Z-Library</span>
+						</a>
+						<a href="http://www.ysxs8.vip/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src='https://www.ysxs8.vip/favicon.ico' />
+							<span style="color:black; margin-left: 5px;">有声小说吧</span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+
+
+			<!-- 购物财经 -->
+			<div id="box5">
+				<!-- <div class="box_title">
+				购物财经
+			</div>
+			<div class="box_title_line">
+			</div> -->
+				<div class="box_content">
+					<span class="box_content_class">
+						电商网站
+					</span>
+					<span class="box_content_class_line"></span>
+					<div class="box_content_div">
+						<a href="https://www.taobao.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://www.taobao.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">淘宝网</span>
+						</a>
+						<a href="https://www.jd.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://www.jd.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">京东</span>
+						</a>
+						<a href="https://www.suning.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src='http://pic.51yuansu.com/pic3/cover/03/44/04/5ba252f6855ed_610.jpg' />
+							<span style="color:black; margin-left: 5px;">苏宁易购</span>
+						</a>
+						<a href="https://www.amazon.cn/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://www.amazon.cn/favicon.ico">
+							<span style="color:black; margin-left: 5px;">亚马逊商场</span>
+						</a>
+						<a href="http://www.dangdang.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="http://www.dangdang.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">当当网</span>
+						</a>
+						<a href="http://yangkeduo.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://www.pinduoduo.com/homeFavicon.ico">
+							<span style="color:black; margin-left: 5px;">拼多多网页版</span>
+						</a>
+
+					</div>
+
+
+
+					<span class="box_content_class_line_up"></span>
+					<span class="box_content_class">财经</span>
+					<span class="box_content_class_line"></span>
+					<div class="box_content_div">
+						<a href="https://www.binance.com/zh-CN" target="_blank" class="box_a">
+							<img width="24" height="24" class="img"
+								src="https://public.bnbstatic.com/static/images/common/favicon.ico">
+							<span style="color:black; margin-left: 5px;">币安网</span>
+						</a>
+						<a href="https://www.528btc.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://www.528btc.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">币界网</span>
+						</a>
+						<a href="https://www.lianquan.cn/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img"
+								src="https://img.lianquan.cn/wp-content/uploads/2020/06/favicon.ico">
+							<span style="color:black; margin-left: 5px;">链圈</span>
+						</a>
+						<a href="https://tokenview.com/cn/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://tokenview.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">区块链浏览器</span>
+						</a>
+						<a href="http://www.huoxing24.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="http://www.huoxing24.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">火星财经</span>
+						</a>
+						<a href="https://www.longau.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://www.longau.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">龙讯财经</span>
+						</a>
+					</div>
+
+
+
+					<span class="box_content_class_line_up"></span>
+					<span class="box_content_class">其他</span>
+					<span class="box_content_class_line"></span>
+					<div class="box_content_div_finish">
+						<a href="https://www.odinnft.cn/#/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://www.odinnft.cn/favicon.ico">
+							<span style="color:black; margin-left: 5px;">ODin元宇宙</span>
+						</a>
+						<a href="http://www.chngc.net/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="http://www.chngc.net/favicon.ico">
+							<span style="color:black; margin-left: 5px;">中国金币网</span>
+						</a>
+						<a href="https://www.kongfz.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://www.kongfz.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">孔夫子旧书网</span>
+						</a>
+
+					</div>
+				</div>
+			</div>
+
+
+
+			<!-- 外网导航 -->
+			<div id="box6">
+				<!-- <div class="box_title">
+				外网导航
+			</div>
+			<div class="box_title_line">
+			</div> -->
+				<div class="box_content">
+					<span class="box_content_class">
+						常用网址
+					</span>
+					<span class="box_content_class_line"></span>
+					<div class="box_content_div">
+						<a href="https://www.google.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="http://www.google.cn/favicon.ico">
+							<span style="color:black; margin-left: 5px;">谷歌搜索</span>
+						</a>
+						<a href="https://zh.wikipedia.org/wiki/Wikipedia:%E9%A6%96%E9%A1%B5" target="_blank"
+							class="box_a">
+							<img width="24" height="24" class="img"
+								src="http://img1.gtimg.com/digi/pics/hv1/105/171/2034/132304560.jpg">
+							<span style="color:black; margin-left: 5px;">维基百科</span>
+						</a>
+						<a href="https://www.youtube.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img"
+								src="http://5b0988e595225.cdn.sohucs.com/images/20171012/5a3e2474e2b942b2b4cb5454f941cc10.png">
+							<span style="color:black; margin-left: 5px;">YouTube</span>
+						</a>
+						<a href="https://www.jkforum.net/forum.php" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src='data:img/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAdCAYAAAAgqdWEAAAC50lEQVRIic1Wz0tqQRQ+XtyJ/0NI
+							EtGqvyAQXLhqkUtXClZ/Qu1yI0r/QNBOXenG3ASCECi2qtCi/BGJuiizlbkzb/eb9+YwXq89hfee
+							fjDemTPjmW++c87cS9fX1zoRLbWBQ6VS0bXRaETLBjigrQyZ8XhMGn6WDXBYKTK6rpOGn2UDHASZ
+							v+nUZrNZ9q3GVva5ycg/PTw88EmSySTt7+/zGHLLdaribrebXl9fed3b25uwmdfZ5yUj/1Sv17nf
+							6XTo4+OD7u/vSdM03syMeDxO/X6f3t/fxXwkEqFGozG1buEwWckNIrIQzKHa29sTKkiixWKR0um0
+							pb+5yMyKtwQ2wRo02QdA5OTkhNW6u7ujw8ND9inXL0RmVsWZSX59ffEG6+vrFAgEfm1iKPf5+Unn
+							5+cTPs1+584ZuTk22draEuPb21t6eXnhsUr89PSUdnd32XZ8fExXV1c/+l+IDJzmcjlBAiiVSvT0
+							9CSqSiWCChsMBmzPZrOUyWRmHnAuMuaYApubm5yQ3W5XVMn29jbPQ7lgMEgOh4NtuA5+OiAjn8/z
+							q9yoCF3i4OBA2AxCPI++4ZjXJRIJ3VBBV6HOq/D7/RN+SPmEAAd8Rkwok0qluP/4+DilDPoXFxd0
+							c3MjxihTGSa1iuS8avN4PKKams0m26cKQ1UGkKcKh8OWH0LGBcfrpDJWSuCkUFdFuVy29CmVsaHj
+							9XoFMcM5nwjlCIhX++9LTb3q0YcytVqNQqEQHw72drstqgcwwsNVhblqtUqxWMwsCDmdTut7Rr3a
+							pZySnJxXQ6dWBMay2gBUESpLzq2trVltORkmJFU0GmVJraSXNjx7vZ5uVM5UAiN05jDs7Ozow+GQ
+							17RarYkknkpgsD46OqLLy0va2NhgdWahUCiIZASM3GD72dmZeKoJisvO5/OJa0HOuVwuen5+tlZm
+							mU0qo/3pJfg/IF+ampqMywI4rBQZ0ez2hd6V/wTgsFJkBKFVIvMNm+bkkR8/GS8AAAAASUVORK5C
+							YII=' />
+							<span style="color:black; margin-left: 5px;">捷克论坛</span>
+						</a>
+						<a href="https://e-hentai.org/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src='data:img/jpg;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAA
+						AAAAAAD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A
+						////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD/
+						//8A////AP///wD///8A////AP///wARBmb/EQZm/xEGZv8RBmb/EQZm/////wD///8A////ABEG
+						Zv8RBmb/////AP///wARBmb/EQZm/////wD///8AEQZm/xEGZv8RBmb/EQZm/xEGZv////8A////
+						AP///wARBmb/EQZm/////wD///8AEQZm/xEGZv////8A////ABEGZv8RBmb/////AP///wD///8A
+						////AP///wD///8AEQZm/xEGZv////8A////ABEGZv8RBmb/////AP///wARBmb/EQZm/////wD/
+						//8A////AP///wD///8A////ABEGZv8RBmb/////AP///wARBmb/EQZm/////wD///8AEQZm/xEG
+						Zv////8A////AP///wD///8A////AP///wARBmb/EQZm/////wD///8AEQZm/xEGZv////8A////
+						ABEGZv8RBmb/EQZm/xEGZv////8AEQZm/xEGZv////8AEQZm/xEGZv8RBmb/EQZm/xEGZv8RBmb/
+						////AP///wARBmb/EQZm/xEGZv8RBmb/////ABEGZv8RBmb/////ABEGZv8RBmb/EQZm/xEGZv8R
+						Bmb/EQZm/////wD///8AEQZm/xEGZv////8A////AP///wD///8A////AP///wARBmb/EQZm////
+						/wD///8AEQZm/xEGZv////8A////ABEGZv8RBmb/////AP///wD///8A////AP///wD///8AEQZm
+						/xEGZv////8A////ABEGZv8RBmb/////AP///wARBmb/EQZm/////wD///8A////AP///wD///8A
+						////ABEGZv8RBmb/////AP///wARBmb/EQZm/////wD///8AEQZm/xEGZv8RBmb/EQZm/xEGZv//
+						//8A////AP///wARBmb/EQZm/////wD///8AEQZm/xEGZv////8A////ABEGZv8RBmb/EQZm/xEG
+						Zv8RBmb/////AP///wD///8AEQZm/xEGZv////8A////ABEGZv8RBmb/////AP///wD///8A////
+						AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A
+						////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD/
+						//8A//8AAP//AACDmQAAg5kAAJ+ZAACfmQAAn5kAAISBAACEgQAAn5kAAJ+ZAACfmQAAg5kAAIOZ
+						AAD//wAA//8AAA==' />
+							<span style="color:black; margin-left: 5px;">E-hentil</span>
+						</a>
+						<a href="https://exhentai.org/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src='data:img/jpg;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAA
+						AAAAAAD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A
+						////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD/
+						//8A////AP///wD///8A////AP///wARBmb/EQZm/xEGZv8RBmb/EQZm/////wD///8A////ABEG
+						Zv8RBmb/////AP///wARBmb/EQZm/////wD///8AEQZm/xEGZv8RBmb/EQZm/xEGZv////8A////
+						AP///wARBmb/EQZm/////wD///8AEQZm/xEGZv////8A////ABEGZv8RBmb/////AP///wD///8A
+						////AP///wD///8AEQZm/xEGZv////8A////ABEGZv8RBmb/////AP///wARBmb/EQZm/////wD/
+						//8A////AP///wD///8A////ABEGZv8RBmb/////AP///wARBmb/EQZm/////wD///8AEQZm/xEG
+						Zv////8A////AP///wD///8A////AP///wARBmb/EQZm/////wD///8AEQZm/xEGZv////8A////
+						ABEGZv8RBmb/EQZm/xEGZv////8AEQZm/xEGZv////8AEQZm/xEGZv8RBmb/EQZm/xEGZv8RBmb/
+						////AP///wARBmb/EQZm/xEGZv8RBmb/////ABEGZv8RBmb/////ABEGZv8RBmb/EQZm/xEGZv8R
+						Bmb/EQZm/////wD///8AEQZm/xEGZv////8A////AP///wD///8A////AP///wARBmb/EQZm////
+						/wD///8AEQZm/xEGZv////8A////ABEGZv8RBmb/////AP///wD///8A////AP///wD///8AEQZm
+						/xEGZv////8A////ABEGZv8RBmb/////AP///wARBmb/EQZm/////wD///8A////AP///wD///8A
+						////ABEGZv8RBmb/////AP///wARBmb/EQZm/////wD///8AEQZm/xEGZv8RBmb/EQZm/xEGZv//
+						//8A////AP///wARBmb/EQZm/////wD///8AEQZm/xEGZv////8A////ABEGZv8RBmb/EQZm/xEG
+						Zv8RBmb/////AP///wD///8AEQZm/xEGZv////8A////ABEGZv8RBmb/////AP///wD///8A////
+						AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A
+						////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD/
+						//8A//8AAP//AACDmQAAg5kAAJ+ZAACfmQAAn5kAAISBAACEgQAAn5kAAJ+ZAACfmQAAg5kAAIOZ
+						AAD//wAA//8AAA==' />
+							<span style="color:black; margin-left: 5px;">EX-Hentai</span>
+						</a>
+						<a href="https://www.pinterest.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img"
+								src='http://www.mlito.com/wp-content/uploads/2014/05/f14ced322dc21c569c0d7ca8ef48f58f.jpeg' />
+							<span style="color:black; margin-left: 5px;">pinterest</span>
+						</a>
+						<a href="http://www.2hzz.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src='http://www.2hzz.com/favicon.ico' />
+							<span style="color:black; margin-left: 5px;">国外网址大全</span>
+						</a>
+					</div>
+
+
+
+					<span class="box_content_class_line_up"></span>
+					<span class="box_content_class">娱乐</span>
+					<span class="box_content_class_line"></span>
+					<div class="box_content_div">
+						<a href="https://www.pixiv.net/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img"
+								src="http://pic.2265.com/upload/2019-3/20193899325483.png">
+							<span style="color:black; margin-left: 5px;">PIXIV插画</span>
+						</a>
+						<a href="https://twitter.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img"
+								src="http://pic.51yuansu.com/pic3/cover/03/89/43/5c1c9eff5ff87_610.jpg">
+							<span style="color:black; margin-left: 5px;">Twitter</span>
+						</a>
+						<a href="http://instagram.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img"
+								src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3224618052,1903417946&fm=26&gp=0.jpg">
+							<span style="color:black; margin-left: 5px;">Instagram</span>
+						</a>
+						<a href="https://www.reddit.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img"
+								src="http://ku.90sjimg.com/element_origin_min_pic/00/97/64/8256f326068ac96.jpg">
+							<span style="color:black; margin-left: 5px;">Reddit</span>
+						</a>
+						<a href="https://ecchi.iwara.tv/?language=zh-hans" target="_blank" class="nav_div_one_a">
+							<img width="24" height="24" class="img" src="https://ecchi.iwara.tv/favicon.ico">
+							<span style="color:black; margin-left: 5px;">Iwara(I站)</span>
+						</a>
+						<a href="https://hanime.tv/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://hanime.tv/favicon.ico">
+							<span style="color:black; margin-left: 5px;">hanime</span>
+						</a>
+						<a href="https://www.twitch.tv" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src='data:img/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAA
+						AXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAETSURBVHgB7ZU7DoJAEIb/JV7MBq/hCVROIJ7A
+						qI2t0d5WsTF2dhzBI1hbsLIYwyPADgzrFvI1PJbk+5lZBoEaNq6cR4APA0wDIdTRgQV5lgGI8skZ
+						nbAe5a8ditwkjk15LoANeS5AW7nqabGvdfcrA9iiD9AHsB5gACZVI5o6uv+rBbct7AW4H4Dw+DmP
+						p+7ipwGU/L5P5V4g/O8aexM2kkusvEsqVxitQOHNd7F8VnyGXIHiny37mWVFZSTyQIzL1tgV0Mlj
+						Qrwwq1pkBaDIoxeG3lU80XUAgvyhk/MC6OSOXs4KoJWfxIPysACRlSslV1YGpwIhV65oOwlDygYz
+						EqBuqLShUQuSWd6hvBFLV/owwBuAI3t8NBey8QAAAABJRU5ErkJggg==' />
+							<span style="color:black; margin-left: 5px;">twitch直播</span>
+						</a>
+						
+					</div>
+
+
+
+					<span class="box_content_class_line_up"></span>
+					<span class="box_content_class">其他</span>
+					<span class="box_content_class_line"></span>
+					<div class="box_content_div_finish">
+						<a href="https://zh.savefrom.net/7/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://zh.savefrom.net/favicon.ico">
+							<span style="color:black; margin-left: 5px;">YouTube视频下载</span>
+						</a>
+						<a href="https://youtube4kdownloader.com/download/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img"
+								src="https://youtube4kdownloader.com/img/favico/apple-icon-57x57.png">
+							<span style="color:black; margin-left: 5px;">YouTube视频下载2</span>
+						</a>
+						<a href="https://archiveofourown.org" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src='data:img/jpg;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAQAQAABMLAAATCwAAAAAA
+					AAAAAAAAAAAA////HQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///2H8/P7M
+					8/P52f///50AAAAA7u7469zc8f////+xAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///4W5
+					ueP/kZHS/3p6wv+oqNz/////pOHh8/8AAJP/hITF/////+j///8+AAAAAAAAAAAAAAAAAAAAAP//
+					/6z5+f7/u7vj/v////L////3UlK5/9vb8fz///+GnJzW/wAAb/8nJ57/yMjo/////8j///8GAAAA
+					AP///6eHh9H/Ly+o//////7v7/n7enrH/oWFzf/39/zPAAAAAP///+xMTLn/IyOd/wAAiv9VVbD/
+					8PD7/P///9DU1PD/AAB2/wAAgP//////pKTa/wAAev/Z2fD/////RQAAAAD///84np7Y/6Ki3P/S
+					0uz/EhKS/wAAjP9vb8P/EBCW/21tvP86Oq3/m5vX//////+0tOD/MzOs/////8cAAAAAAAAAAObm
+					9PFycsb/////+v////aSktL/AAB2/wAAeP88PLL/Dg6b/xkZov+Bgcr/Kiqg/1tbvf////++AAAA
+					AAAAAAD///+qlJTU//z8/vT////0XV22/xERkf+bm9j/b2/E/2lpwP8AAJP/Gxud/3R0wv/////1
+					////FgAAAAAAAAAA////WcjI6P/+/v//QUGx/wICiv9SUrn/YmK7/11dtf+IiM3/aWnB/5qa1///
+					///ZAAAAAAAAAAD///8D////Ef///z719fv/DQ2X/y8vqf9bW8D/KSmm/6Sk1/+9veT/TU20/yEh
+					pf8xMav/y8vq/f///zAAAAAA////Dv///7TLy+r8UlK4/2pqv//q6vf/JCSm//Ly+v7////+////
+					//////dUVLn/QkKy/2dnwf/IyOn9////Q/Pz+vmfn9j/dnbH/8jI6f3///+8lJTU/jg4rv/////y
+					///////////////wmZnV/1RUuf/f3/L/aWnC/+3t9//39/zp4eHy9////8P///8ZAAAAAMHB5v8G
+					Bpr//////f////7////+////9kREs/9LS7X/////vP///+f5+fzbAAAAAP///wH///8CAAAAAAAA
+					AAD////JVFS5/xERmP/Dw+X/2dnw/Vxct/8EBJj/6Oj1/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAP///+1zc8L/Jiaf/ycnnv88PKn/5ub0/////1wAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////nf///+T9/f3r////wv///ywAAAAAAAAAAAAAAAAA
+					AAAAv+EAAB/AAAAHgAAAAQAAAIAAAACAAAAAwAAAAMAAAADAAwAAAAEAAAAAAAAAAAAACAAAAJgH
+					AAD8BwAA/g8AAA==' />
+							<span style="color:black; margin-left: 5px;">AO3电子书</span>
+						</a>
+						<a href="https://www.tokyotosho.info/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://hacg.tv/favicon.ico">
+							<span style="color:black; margin-left: 5px;">东京图书馆</span>
+						</a>
+						<a href="https://www.4chan.org" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src='data:img/jpg;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAAAABILAAASCwAAAAAA
+													AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+													AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAAAAAAD/AAAAAAAAAAAAAAAAAAAAAAAAAP8A
+													AAAAAAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/zPMZv8AAAD/M8xm/wAAAP8AAAAAAAAAAAAA
+													AP8zzGb/AAAA/zPMZv8AAAD/AAAAAAAAAAAAAAAAAAAAAAAAAP8zzGb/M8xm/zPMZv8AAAD/AAAA
+													AAAAAAAAAAD/M8xm/zPMZv8zzGb/AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAD/M8xm/zPMZv8zzGb/
+													AAAA/wAAAAAAAAAAAAAA/zPMZv8zzGb/M8xm/wAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8z
+													zGb/M8xm/wAAAP8AAAAAAAAAAAAAAP8zzGb/M8xm/wAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+													AAAAAAAAAAAA/wAAAP8AAAAAAAAAAAAAAAAAAAAAAAAA/wAAAP8AAAAAAAAAAAAAAAAAAAAAAAAA
+													AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+													AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+													AAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAD/AAAA/wAAAP8AAAAAAAAAAAAAAAAAAAAAAAAA/wAA
+													AP8AAAD/AAAA/wAAAAAAAAAAAAAAAAAAAP8zzGb/M8xm/zPMZv8zzGb/AAAA/wAAAAAAAAAAAAAA
+													/zPMZv8zzGb/M8xm/zPMZv8AAAD/AAAAAAAAAAAAAAAAAAAA/zPMZv8zzGb/M8xm/wAAAP8AAAAA
+													AAAAAAAAAP8zzGb/M8xm/zPMZv8AAAD/AAAAAAAAAAAAAAAAAAAA/zPMZv8zzGb/M8xm/wAAAP8A
+													AAAAAAAAAAAAAAAAAAAAAAAA/zPMZv8zzGb/M8xm/wAAAP8AAAAAAAAAAAAAAAAAAAD/AAAA/wAA
+													AP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAA/wAAAP8AAAAAAAAAAAAAAAAAAAAAAAAA
+													AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+													AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+													AAAA//8AAOvXAADBgwAAwYMAAMGDAADhhwAA888AAP//AAD//wAAw8MAAIGBAADBgwAAg8EAAMfj
+													AAD//////////w==' />
+							<span style="color:black; margin-left: 5px;">4chan</span>
+						</a>
+
+
+
+						<a href="http://share.dmhy.org/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src='data:img/jpg;base64,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
+								j9V5v1KCqVFRUuInyHAiatdql3lqBNN6A5Jz4oH0SiWBRYKCUVHNTO7WMFHbJ62WmJ7jvs5d03p7
+								MDBSnlVVXVmCUr1RUc3NUdbNze7bis6evgqe7Lml1YonvZ3OVek4nZ3i4lJSJ79SnalMTKl7avxq
+								W5H1uW/VYSdyi3Y8Jr+dcuJZPu3sds44UiTdqb8hOsReM/shIZi/J3LYzLQmWUOLi8H2trFct7nB
+								vSSp5P+eP8yJQ829v7/Pz4o98zNZcp2IcKU2bDILNW/GLVKtlsc/lifuTJ0nWc/iitqTjOTPveLI
+								RNRKjLAlpcHvwfyeeZA42/fuQycnaHKuT6KxdXLPcuJZrjjH1dMHwciBOuOYB60nUSTgjb2dnXWm
+								bEqt4nJoz3JynW6ZeZ91n0c6eXX7zoGOUakwvVFRrtRssf8nnc+9cp0kMKq7UlIjR12XGCEhm9yJ
+								UoKCze4nllWFzFnPIM9ZWVKCvIhS21KfBGoKvgrxfvbhdVJzTFF5jKHpitu7giOcrYpSvVH9+r/O
+								/nkTCgr+S9N+WdZ0zb8fFeuK27uCIjfT3r9RqQ4aUjhfI5jjmOPxVhzxv72dWQS5326Su3sEt+nS
+								+SdzTtZ1nKx1Pmrxar4zM2pZUZ2ffnaKc9aCyH61sLE3n6kPiGTtMa5Q474hxOtjISedaBKaHx3v
+								WSfk1QdLt7f/v1LGy39qUFAKasR29erOJ89yxbYVH/7OOL+/dWCUt/T5OpB+xPBQapdqWo83XTiL
+								clGusQI2r1UEe9tRchEWuKaG6My6WxiXajrc3IGuJydycnXMSqav8n5ZvUOdaHclJRZ3RARtODha
+								QYm/vamCJ89DaNd5YP9exYvPz1K75Feb4Uho32M6OJ5wgg+pc25Snc0wu7ud4opZcnJyUgMt1tZz
+								JKnQlnZNPj57goK7qoK94KuVlZVRMM2pMG6oOaAZLi5UJO+Y+8c+geHFidDbJFFRqaepJCTu7iTW
+								3SgICAgbsjRCv5b7e3t1rJybcL1G3am7iLvWeKf39/gZCFPJyVNTs4dIup5SLVLidVeJcxQXqqMi
+								mK7YJ3KVgAUbAQwpshtALqtqPnNn29snK40X52mNIuE4YCIixQ2AHoPlhCyz0eZTO4p5eKdzZzAG
+								IKkQwI51v+JoZcaWOPgIAWtJfUlJG6RiiMckaacPqW7QaA0Ni9unpw+ngooxUS98fTSkAQFmGdu7
+								1/hCJO4kp9YnnVEk993d3cPDgnXKKtkJh7Pm5sLgvwPIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+								AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+								AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=' />
+							<span style="color:black; margin-left: 5px;">动漫花园</span>
+						</a>
+
+						<a href="https://web.telegram.org/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img"
+								src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1050718349,3726483823&fm=26&gp=0.jpg">
+							<span style="color:black; margin-left: 5px;">Telegram Web版</span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+
+
+
+			<!-- 软件下载 -->
+			<div id="box7">
+				<!-- <div class="box_title">
+				软件下载
+			</div>
+			<div class="box_title_line">
+			</div> -->
+				<div class="box_content">
+					<span class="box_content_class">
+						软件下载
+					</span>
+					<span class="box_content_class_line"></span>
+					<div class="box_content_div">
+						<a href="https://www.ghpym.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img"
+								src="https://img.lguohe.com/./uploads/2020/10/ghfavicon.png">
+							<span style="color:black; margin-left: 5px;">果核剥壳</span>
+						</a>
+						<a href="http://www.dayanzai.me/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="http://www.dayanzai.me/favicon.ico">
+							<span style="color:black; margin-left: 5px;">大眼仔</span>
+						</a>
+						<a href="https://www.rjsos.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://www.rjsos.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">软件SOS</span>
+						</a>
+
+						<a href="https://www.portablesoft.org/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://www.portablesoft.org/favicon.ico">
+							<span style="color:black; margin-left: 5px;">绿色资源网</span>
+						</a>
+						<a href="https://www.52pojie.cn/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://www.52pojie.cn/favicon.ico">
+							<span style="color:black; margin-left: 5px;">吾爱破解</span>
+						</a>
+						<a href="https://www.getitfree.cn/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img"
+								src="https://www.getitfree.cn/wp-content/uploads/favicon.ico">
+							<span style="color:black; margin-left: 5px;">正版中国</span>
+						</a>
+						<a href="https://msdn.itellyou.cn/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://msdn.itellyou.cn/favicon.ico">
+							<span style="color:black; margin-left: 5px;">Win系统</span>
+						</a>
+						<a href="http://www.wepe.com.cn/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="http://www.wepe.com.cn/favicon.ico">
+							<span style="color:black; margin-left: 5px;">WinPE</span>
+						</a>
+						<a href="https://www.huorong.cn/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://www.huorong.cn/favicon.ico">
+							<span style="color:black; margin-left: 5px;">火绒安全</span>
+						</a>
+						<a href="https://amazing-apps.gitbook.io/windows-apps-that-amaze-us/langs" target="_blank"
+							class="box_a">
+							<img width="24" height="24" class="img"
+								src="https://gblobscdn.gitbook.com/spaces%2F-LCNPdf4QCUci8UCmKuN%2Favatar.png?alt=media">
+							<span style="color:black; margin-left: 5px;">绝赞应用</span>
+						</a>
+					</div>
+
+					<span class="box_content_class_line_up"></span>
+					<span class="box_content_class">机场推荐</span>
+					<span class="box_content_class_line"></span>
+					<div class="box_content_div_finish">
+						<a href="https://mj88.cloud/auth/register?code=yqAt" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://mj88.cloud/favicon.ico">
+							<span style="color:black; margin-left: 5px;">魔晶云(站主在用)</span>
+						</a>
+						<a href="https://www.jindcloud.com/auth/register?code=gyL5vcJe" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://www.jindcloud.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">筋斗云</span>
+						</a>
+						<a href="https://ssr.otakuyun.net/register?aff=2072" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://ssr.otakuyun.net/favicon.ico">
+							<span style="color:black; margin-left: 5px;">御宅云</span>
+						</a>
+
+
+
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+			<!-- 其他工具 -->
+			<div id="box8">
+				<!-- <div class="box_title">
+				软件下载
+			</div>
+			<div class="box_title_line">
+			</div> -->
+				<div class="box_content">
+					<span class="box_content_class">
+						网盘
+					</span>
+					<span class="box_content_class_line"></span>
+					<div class="box_content_div">
+						<a href="https://pan.baidu.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img"
+								src="https://pan.baidu.com/static/images/favicon.ico">
+							<span style="color:black; margin-left: 5px;">百度网盘</span>
+						</a>
+						<a href="https://pan.xunlei.com" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://pan.xunlei.com/icon.png">
+							<span style="color:black; margin-left: 5px;">迅雷云盘</span>
+						</a>
+						<a href="https://www.aliyundrive.com/sign/in" target="_blank" class="box_a">
+							<img width="24" height="24" class="img"
+								src="https://g.alicdn.com/thoughts/tb-wangpan/1.20.3/favicon.ico">
+							<span style="color:black; margin-left: 5px;">阿里云盘</span>
+						</a>
+					</div>
+
+					<span class="box_content_class_line_up"></span>
+					<span class="box_content_class">插件</span>
+					<span class="box_content_class_line"></span>
+					<div class="box_content_div">
+						<a href="https://greasyfork.org/zh-CN" target="_blank" class="box_a">
+							<img width="24" height="24" class="img"
+								src="https://greasyfork.org/assets/blacklogo16-f649ec98e464d95b075234438da0fa13233b467b3cd1ad020f0ea07dea91d08c.png">
+							<span style="color:black; margin-left: 5px;">Greasy Fork插件</span>
+						</a>
+						<a href="https://sleazyfork.org/zh-CN" target="_blank" class="box_a">
+							<img width="24" height="24" class="img"
+								src="https://sleazyfork.org/assets/blacklogo16-f649ec98e464d95b075234438da0fa13233b467b3cd1ad020f0ea07dea91d08c.png">
+							<span style="color:black; margin-left: 5px;">Sleazy Fork插件</span>
+						</a>
+					</div>
+
+					<span class="box_content_class_line_up"></span>
+					<span class="box_content_class">其他</span>
+					<span class="box_content_class_line"></span>
+					<div class="box_content_div_finish">
+						<a href="https://btdig.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src='data:img/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAPCAYAAADtc08vAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+						jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAI0SURBVDhPhVJNTxNRFD1vvvsBbYO1wRgRjOLO
+						GBM2Jm74ByQSY1zyl1zAbyBxR8KKsENT40a0iQakIKVh0unAdNp583G9fa3YEAMnmczkvnvOnHfv
+						EcTAGN4gRdnR8KMTwRACKZ/YhgZHF+gMEjyq2DA1Me4e4UrAj1IEMsOhL/G4YsFh4rCZddBlct7U
+						cNCNUbI03C2YKPL7SqDpx1wQcMMUT2ZsdXAdMs2Uq+ZljBw7mrJ1JapkujKBxcW5kqma/wdL52Z2
+						lDcEX0uwG6nq4sCLaGgnzgTuFXVVvA375wNUCwammTcUBZHG5Iw/wEIh+pkHJBnI90eMf3NWWKw6
+						yvFZL4E478WUMwx8OF5C2VpE1XmGpvkVr98/Bx03gIV5YHkZ2NoC1taAjQ2Id2+xW5zDyzsGtHaY
+						IMdXN7UijoIGHhRe4Wn5DRBFoNkaUK8rMm1vg9bXQZubwN5HLNUsNDo8h9aFpCAiaoefyYt+Upz2
+						qU8B0WGTsp2d4ZIU0pUVylyX0tVVou/7tHsmqR+nJOqnPao4OhY4JDdhOIW/EUr4OelGKFg6tBez
+						eYQ8sNswmb8vrZBzo2Pa1iA4ZeT1E3hRhvmSxVG+eZW/L6XKBO8ItbwJrcSJeli2scBkviq+uQP1
+						vg6Xh51mxKtLVfoqtqHqo0AzhCC0Ocr3p0w0L2J8YpsZC+2d9sAm0QokTjjGZf7hTN5QOVBQI55A
+						IBP61Y0oSjKqt3pq0ke+JDeU445JEP0BSOFArCaru3MAAAAASUVORK5CYII=' />
+							<span style="color:black; margin-left: 5px;">BTDigg</span>
+						</a>
+						<a href="https://www.torrentkitty.tv/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://trello.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">TorrentKitt</span>
+						</a>
+						<a href="https://sm.ms/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://sm.ms/favicon.ico">
+							<span style="color:black; margin-left: 5px;">SM图床(图片外链接)</span>
+						</a>
+
+						<a href="https://tineye.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://trello.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">TinEye搜图</span>
+						</a>
+						<a href="https://saucenao.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://saucenao.com/favicon.ico">
+							<span style="color:black; margin-left: 5px;">以图搜图</span>
+						</a>
+						<a href="http://wusagi.pw/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="http://wusagi.pw/img/favicon.ico">
+							<span style="color:black; margin-left: 5px;">漫画阅读器</span>
+						</a>
+						<a href="https://convertio.co/zh/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://convertio.co/favicon.ico">
+							<span style="color:black; margin-left: 5px;">文件转换</span>
+						</a>
+						<a href="http://ocr.wdku.net/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://ocr.wdku.net/favicon.ico">
+							<span style="color:black; margin-left: 5px;">文字识别</span>
+						</a>
+						<a href="http://tool.mkblog.cn/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="http://tool.mkblog.cn/favicon.ico">
+							<span style="color:black; margin-left: 5px;">网页工具</span>
+						</a>
+
+						<a href="http://html5.huceo.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img"
+								src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1602736288744&di=d506fc54db31a8345ea25bcbd61dbf67&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201708%2F24%2F20170824111803_kCTMY.thumb.700_0.jpeg">
+							<span style="color:black; margin-left: 5px;">html5的一些特效</span>
+						</a>
+
+						<a href="https://touduyu.com/" target="_blank" class="box_a">
+							<img width="24" height="24" class="img" src="https://touduyu.com/assets/images/favicon.ico">
+							<span style="color:black; margin-left: 5px;">偷渡鱼导航页</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		</div>
+		<!-- 隐藏的导航 -->
+		<div id="hide_div" style="margin-top: 35px;  visibility: hidden; margin-bottom: 35px; display: none;">
+			<iframe style="width: 100%; height: 660px; border: medium none;" src="chengren.html"
+				scrolling="no"></iframe>
+		</div>
+
+
+	</body>
+
+	<script type="text/javascript">
+		let flag = 1;
+		var switchs = document.querySelector('.switch');
+		switchs.onclick = function() {
+			flag *= -1;
+			if (flag > 0) {
+				document.querySelectorAll('.switch')[0].setAttribute('data-text', '关');
+				document.getElementById("hide_div").style.visibility = "hidden";
+				document.getElementById("hide_div").style.display = "none";
+				//document.getElementById("tuijian").style.marginBottom = "30px";
+			} else {
+				document.querySelectorAll('.switch')[0].setAttribute('data-text', '开');
+				document.getElementById("hide_div").style.visibility = "visible";
+				document.getElementById("hide_div").style.display = "block";
+				//document.getElementById("tuijian").style.marginBottom = "0px";
+			}
+		}
+	</script>
+</html>
