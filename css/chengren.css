@@ -89,3 +89,11 @@
 	flex-direction: row;
 	flex-wrap: nowrap;
 }
+
+.box_a_niupi {
+	margin-top: 15px;
+	width: 50%;
+	display: flex;
+	align-content: center;
+	font-size: 30px;
+}
