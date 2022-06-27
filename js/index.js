@@ -1,5 +1,6 @@
 var cookie_name = "bgImg";
 var imgUrl = null;
+var imgOpacity = null;
 document.onreadystatechange = function() {
 	if (document.readyState = "complete") {
 		if (imgUrl == null) {
@@ -8,6 +9,17 @@ document.onreadystatechange = function() {
 		if (imgUrl != null) {
 			document.getElementById("bg_div_img").src = imgUrl;
 		}
+		if(imgOpacity == null ){
+			imgOpacity = localStorage.getItem("imgOpacity");
+		}
+		if(imgOpacity != null){
+			var img = document.getElementById("bg_div_img");
+			img.style.opacity = imgOpacity;
+			var x = document.getElementById("myRange");
+			x.defaultValue = imgOpacity;
+	
+		}
+		
 	}
 };
 
@@ -19,7 +31,10 @@ function opacityVoid(){
 	var img = document.getElementById("bg_div_img");
 	img.style.opacity = value;
 	console.log(value+"---->");
+	localStorage.setItem("imgOpacity", ""+value);
 }
+
+
 
 //获取和设置背景图片
 function setLogoImg() {
