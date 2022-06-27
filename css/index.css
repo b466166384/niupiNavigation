@@ -248,12 +248,14 @@ button:hover {
 	font-size: 17px;	
 }
 #span_select1{
-	background: #99CCCC;
+	background: #99CCCC; 
 	color: #FFFF00;
 }
 #span_select1:hover {
 	/*鼠标移动时的颜色变化*/
-	background-color: burlywood;
+	/* background-color: burlywood; */
+	background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+	
 }
 #span_select2{
 	background: #FFCCCC;
@@ -261,7 +263,7 @@ button:hover {
 }
 #span_select2:hover {
 	/*鼠标移动时的颜色变化*/
-	background-color: burlywood;
+	background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
 }
 #span_select3{
 	background: #99CC99;
@@ -269,7 +271,7 @@ button:hover {
 }
 #span_select3:hover {
 	/*鼠标移动时的颜色变化*/
-	background-color: burlywood;
+background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
 }
 #span_select4{
 	background: #CCCCCC;
@@ -278,7 +280,7 @@ button:hover {
 }
 #span_select4:hover {
 	/*鼠标移动时的颜色变化*/
-	background-color: burlywood;
+background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
 }
 #span_select5{
 	background: #CCFFFF;
@@ -286,7 +288,7 @@ button:hover {
 }
 #span_select5:hover {
 	/*鼠标移动时的颜色变化*/
-	background-color: burlywood;
+background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
 }
 #span_select6{
 	background: #CCCCFF;
@@ -294,7 +296,7 @@ button:hover {
 }
 #span_select6:hover {
 	/*鼠标移动时的颜色变化*/
-	background-color: burlywood;
+	background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
 }
 #span_select7{
 	background: #FF6666;
@@ -302,7 +304,7 @@ button:hover {
 }
 #span_select7:hover {
 	/*鼠标移动时的颜色变化*/
-	background-color: burlywood;
+	background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
 }
 #span_select8{
 	background: #CCFF99;
@@ -310,7 +312,7 @@ button:hover {
 }
 #span_select8:hover {
 	/*鼠标移动时的颜色变化*/
-	background-color: burlywood;
+	background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
 }
 
 

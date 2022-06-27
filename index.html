@@ -20,7 +20,7 @@
 	</head>
 	<body>
 		<div id="bg_div">
-			<img id="bg_div_img" src="http://lmg.jj20.com/up/allimg/1113/020520123437/200205123437-2-1200.jpg" />
+			<img id="bg_div_img" src="http://pic1.win4000.com/wallpaper/2020-02-28/5e589c8fc7202.jpg" />
 		</div>
 
 		<div style="display: flex; width: 100%; flex-direction: column;">
@@ -75,6 +75,11 @@
 					style="margin-top: 10px; display: flex; align-items: center; margin-left: 20px;">
 					<input class="switch switch-admin" type="checkbox" data-text="关"></input>
 				</div>
+				
+				<!-- 	透明度调节 -->
+				<div>
+					<input id="myRange" type="range" min="0" max="1" step="0.1"  oninput="opacityVoid()" />
+				</div>
 				<div>
 					<span class="Selectbg">
 						<input style="border: 0;outline: none; background-color: rgba(0,0,0,0); width: 90px;"
@@ -88,6 +93,8 @@
 					</span>
 
 					<button style="margin-left: 10px;" id="bg_button" onclick="setLogoImg()">修改背景</button>
+				
+				
 				</div>
 			</div>
 

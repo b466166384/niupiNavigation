@@ -11,6 +11,16 @@ document.onreadystatechange = function() {
 	}
 };
 
+
+//滑动条设置透明度
+function opacityVoid(){
+	var x = document.getElementById("myRange");
+	var value = x.value;
+	var img = document.getElementById("bg_div_img");
+	img.style.opacity = value;
+	console.log(value+"---->");
+}
+
 //获取和设置背景图片
 function setLogoImg() {
 	var txt = document.getElementById("bg_input").value;
