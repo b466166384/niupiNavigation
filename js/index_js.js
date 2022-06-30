@@ -65,8 +65,9 @@ function trellobtn(){
 	for (i = 0; i < a1.length; i++) {
 		arrayObj.push(a1[i].attributes.href.value + ' \n' + '</br>')
 	}
+	var result = Array.from(new Set(arrayObj))
 	//消除分割符的逗号
-	str = arrayObj.toString().replace(/,/g, '');
+	str = result.toString().replace(/,/g, '');
 	$("#shu").html(str);
 	document.getElementById("input").value = ""
 }
