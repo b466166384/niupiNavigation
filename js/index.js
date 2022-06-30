@@ -30,7 +30,6 @@ function opacityVoid(){
 	var value = x.value;
 	var img = document.getElementById("bg_div_img");
 	img.style.opacity = value;
-	console.log(value+"---->");
 	localStorage.setItem("imgOpacity", ""+value);
 }
 

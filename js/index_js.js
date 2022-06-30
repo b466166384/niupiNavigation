@@ -40,11 +40,30 @@ function jaHentaiCos(){
 	y = x.value
 	$('#shu').html(y)
 	$('tr').hide();
-	a1 = document.getElementsByTagName("amp-img");
+	a1 = document.getElementsByTagName("a");
+	console.log(a1);
 	var arrayObj = new Array();
 	arrayObj.push(a1.length + ' \n' + '</br>');
 	for (i = 0; i < a1.length; i++) {
-		arrayObj.push(a1[i].attributes.src.value + ' \n' + '</br>')
+		arrayObj.push(a1[i].attributes.href.value + ' \n' + '</br>')
+	}
+	//消除分割符的逗号
+	str = arrayObj.toString().replace(/,/g, '');
+	$("#shu").html(str);
+	document.getElementById("input").value = ""
+}
+
+
+function trellobtn(){
+	var x = document.getElementById("input")
+	y = x.value
+	$('#shu').html(y)
+	$('tr').hide();
+	a1 = document.getElementsByTagName("a");
+	var arrayObj = new Array();
+	arrayObj.push(a1.length + ' \n' + '</br>');
+	for (i = 0; i < a1.length; i++) {
+		arrayObj.push(a1[i].attributes.href.value + ' \n' + '</br>')
 	}
 	//消除分割符的逗号
 	str = arrayObj.toString().replace(/,/g, '');
