@@ -8,11 +8,11 @@
 	</head>
 	<body>
 		
-		<div style="display: flex;justify-content: center;align-items: center;flex-direction: column;">
-			<span>
-				<button onclick="next()" style="padding: 20px;">下一张</button>
+		<div style="display: flex;flex-direction: column;align-items: center;">
+			<span onclick="next()" style="width: 100%;background-color: blue; color: #fff;height: 35px;font-size: 20px;display: flex;flex-direction: row;justify-content: center;align-items: center;">
+				下一张
 			</span>
-			<img id="random_img" src="img/baidu_logo.png"/>
+			<img id="random_img" src="https://5b0988e595225.cdn.sohucs.com/images/20181130/4cd573e226e44f05ae2a84bd0d24d81b.jpeg"  style="width: 95%;object-fit: contain;"/>
 		</div>
 		<script type="text/javascript">
 			function getPromiseRequest(url) {
@@ -33,11 +33,11 @@
 			            })
 			        }
 					
-			var isdata = true;		
+	
 			document.onreadystatechange = function() {
 				if (document.readyState = "complete") {
-					if(isdata){
-						getPromiseRequest('http://114.116.71.18:8082/random/img')
+					
+						getPromiseRequest('http://www.niupi.site:8082/random/img')
 						    .then(function (data) {
 						      console.log(data.data.img);
 						      isdata = false;
@@ -48,13 +48,13 @@
 						    }).then(function(data) {
 						        console.log(data);
 						    })
-					}
+					
 					
 				}
 			};		
 							
 							function next(){
-								getPromiseRequest('http://114.116.71.18:8082/random/img')
+								getPromiseRequest('http://www.niupi.site:8082/random/img')
 								    .then(function (data) {
 								      console.log(data.data.img);
 								      isdata = false;
