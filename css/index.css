@@ -1,11 +1,30 @@
 #bg_div {
-	z-index: -99;
+	z-index: -95;
 	position: fixed;
 	margin: auto;
 	top: 0;
 	left: 0;
 	width: 100%;
 	right: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	
+}
+
+#bg_div_img {
+	opacity: 0.4;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-repeat:repeat-x;
+	background-color: #000;
 }
 
 .Selectbg {
@@ -28,7 +47,7 @@
 	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6)
 }
 
-#img_span{
+#img_span {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -66,16 +85,7 @@ button:hover {
 	background-color: burlywood;
 }
 
-#bg_div_img {
-	opacity: 0.4;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	margin: auto;
 
-}
 
 #baidu_div {
 	width: 100%;
@@ -90,7 +100,7 @@ button:hover {
 	flex-direction: row;
 }
 
- .nav_div_one {
+.nav_div_one {
 	width: 100%;
 	display: flex;
 	flex: row;
@@ -109,7 +119,7 @@ button:hover {
 	margin-left: 25px;
 }
 
- 
+
 
 .switch-boxs {
 	height: 50px;
@@ -233,86 +243,102 @@ button:hover {
 
 
 
-.div_select{
+.div_select {
 	display: flex;
-	flex-direction:row ;
+	flex-direction: row;
 	flex-wrap: nowrap;
 	width: 100%;
 
 }
 
-.span_select{
+.span_select {
 	display: flex;
 	width: 12.5%;
 	height: 50px;
 	justify-content: center;
 	align-items: center;
 	align-content: center;
-	font-size: 17px;	
+	font-size: 17px;
 }
-#span_select1{
-	background: #99CCCC; 
+
+#span_select1 {
+	background: #99CCCC;
 	color: #FFFF00;
 }
+
 #span_select1:hover {
 	/*鼠标移动时的颜色变化*/
 	/* background-color: burlywood; */
 	background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
-	
+
 }
-#span_select2{
+
+#span_select2 {
 	background: #FFCCCC;
 	color: #CC0033;
 }
+
 #span_select2:hover {
 	/*鼠标移动时的颜色变化*/
 	background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
 }
-#span_select3{
+
+#span_select3 {
 	background: #99CC99;
 	color: #CC0033;
 }
+
 #span_select3:hover {
 	/*鼠标移动时的颜色变化*/
-background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+	background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
 }
-#span_select4{
+
+#span_select4 {
 	background: #CCCCCC;
 	color: #CC0033;
-	
+
 }
+
 #span_select4:hover {
 	/*鼠标移动时的颜色变化*/
-background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+	background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
 }
-#span_select5{
+
+#span_select5 {
 	background: #CCFFFF;
 	color: #CC0033;
 }
+
 #span_select5:hover {
 	/*鼠标移动时的颜色变化*/
-background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+	background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
 }
-#span_select6{
+
+#span_select6 {
 	background: #CCCCFF;
 	color: #CC0033;
 }
+
 #span_select6:hover {
 	/*鼠标移动时的颜色变化*/
 	background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
 }
-#span_select7{
+
+#span_select7 {
 	background: #FF6666;
 	color: #CC0033;
 }
+
 #span_select7:hover {
 	/*鼠标移动时的颜色变化*/
 	background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
 }
-#span_select8{
+
+#span_select8 {
 	background: #CCFF99;
 	color: #CC0033;
 }
+
 #span_select8:hover {
 	/*鼠标移动时的颜色变化*/
 	background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
@@ -374,7 +400,7 @@ background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
 	background: url(../img/icon_line.png);
 }
 
- .box_content_class_line_up{
+.box_content_class_line_up {
 	margin-top: 10px;
 	width: 100%;
 }
@@ -392,6 +418,7 @@ background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
 	flex-wrap: nowrap;
 
 }
+
 .box_a {
 	margin-top: 15px;
 	width: 20%;
@@ -402,14 +429,14 @@ background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
 
 #box2 {
 	width: 100%;
-	
+
 	height: auto;
 	display: none;
 	flex-direction: row;
 	flex-wrap: nowrap;
 }
 
-#box3{
+#box3 {
 	width: 100%;
 
 	height: auto;
@@ -418,39 +445,7 @@ background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
 	flex-wrap: nowrap;
 }
 
-#box4{
-	width: 100%;
-
-	height: auto;
-	display: none;
-	flex-direction: row;
-	flex-wrap: nowrap;
-}
-#box5{
-	width: 100%;
-
-	height: auto;
-	display: none;
-	flex-direction: row;
-	flex-wrap: nowrap;
-}
-#box6{
-	width: 100%;
-	
-	height: auto;
-	display: none;
-	flex-direction: row;
-	flex-wrap: nowrap;
-}
-#box7{
-	width: 100%;
-
-	height: auto;
-	display: none;
-	flex-direction: row;
-	flex-wrap: nowrap;
-}
-#box8{
+#box4 {
 	width: 100%;
 
 	height: auto;
@@ -459,36 +454,75 @@ background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
 	flex-wrap: nowrap;
 }
 
+#box5 {
+	width: 100%;
 
- /* 开关按钮 */
-  .btn-on{
-    width: 60px;
-    height: 25px;
-    margin: 0 3px;
-    border-radius: 25px;
-    font-size: 14px;
-  }
-  .btn-on{
-    cursor: pointer;
-    position: relative;
-    border: 1px solid white;
-    background-color: #12B090;
-  }
-  .btn-on-circle{
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    top: 5px;
-    left: 5px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 50%;
-    box-shadow: 0 0 10px white;
-    transition: all .5s;
-  }
-  .btn-on-text{
-    position: absolute;
-    right: 10px;
-    line-height: 25px;
-    color: white;
-    transition: all .5s;
-  }
+	height: auto;
+	display: none;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+#box6 {
+	width: 100%;
+
+	height: auto;
+	display: none;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+#box7 {
+	width: 100%;
+
+	height: auto;
+	display: none;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+#box8 {
+	width: 100%;
+
+	height: auto;
+	display: none;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+
+/* 开关按钮 */
+.btn-on {
+	width: 60px;
+	height: 25px;
+	margin: 0 3px;
+	border-radius: 25px;
+	font-size: 14px;
+}
+
+.btn-on {
+	cursor: pointer;
+	position: relative;
+	border: 1px solid white;
+	background-color: #12B090;
+}
+
+.btn-on-circle {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	top: 5px;
+	left: 5px;
+	background-color: rgb(255, 255, 255);
+	border-radius: 50%;
+	box-shadow: 0 0 10px white;
+	transition: all .5s;
+}
+
+.btn-on-text {
+	position: absolute;
+	right: 10px;
+	line-height: 25px;
+	color: white;
+	transition: all .5s;
+}

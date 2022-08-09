@@ -37,9 +37,6 @@ function opacityVoid() {
 var t2;
 //打开幻灯背景
 function playPic() {
-	document.getElementById("bg_div_img").style.width = "auto";
-    document.getElementById("bg_div_img").style.height =  window.innerHeight +"px";
-
 	getPic()
 	t2 = window.setInterval(function() {
 		setTimeout(function() {
@@ -51,8 +48,6 @@ function playPic() {
 
 //关闭幻灯背景
 function closePlay() {
-	document.getElementById("bg_div_img").style.width = "100%";
-	document.getElementById("bg_div_img").style.height = "100%";
 	//去掉定时器
 	window.clearInterval(t2);
 	if (imgUrl == null) {
@@ -80,9 +75,9 @@ function closePlay() {
 function getPic() {
 	getPromiseRequest('http://114.116.71.18:8082/niupi/random/random/img')
 		.then(function(data) {
-			console.log(data.data.img);
+			console.log(data.data.data.img);
 			isdata = false;
-			var imgUrl = data.data.img;
+			var imgUrl = data.data.data.img;
 			document.getElementById("bg_div_img").src = imgUrl;
 		}, function(err) {
 			console.log(err);
@@ -93,20 +88,23 @@ function getPic() {
 
 //获取接口方法
 function getPromiseRequest(url) {
-	return new Promise(function(resolve, reject) {
-		var xhr = new XMLHttpRequest();
-		xhr.open('get', url);
-		xhr.send(null);
-		xhr.onreadystatechange = function() {
-			if (xhr.readyState != 4) return; // 避免执行reject函数
-			if (xhr.readyState == 4 && xhr.status == 200) {
-				resolve(JSON.parse(xhr.response));
-			} else {
-				reject('找不到服务器');
+	var headers = {
+		"Content-Type": "application/json",
+	}
+	return new Promise((resolve, reject) => {
+		axios.create({
+			headers: headers
+		}).get("https://114.116.71.18:8085/niupi/random/random/img").then((res) => {
+			if (res.status == 200) {
+				console.log(res)
+				resolve(res);
+			}else{
+			 resolve(res);
 			}
-		};
-
-
+		
+		}).catch((err) => {
+			reject(err);
+		})
 	})
 }
 

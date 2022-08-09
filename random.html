@@ -17,9 +17,10 @@
 		<script type="text/javascript">
 			function getPromiseRequest(url) {
 			            return new Promise(function (resolve, reject) {
-			                var xhr = new XMLHttpRequest();
+			                var xhr =  new ActiveXObject("Msxml2.ServerXMLHTTP.3.0");
 			               xhr.open('get', url);
 			               xhr.send(null);
+						   
 			                xhr.onreadystatechange = function () {
 			                    if(xhr.readyState != 4) return;// 避免执行reject函数
 			                    if (xhr.readyState == 4 && xhr.status == 200) {
@@ -33,11 +34,12 @@
 			            })
 			        }
 					
-	
+			var isdata = true;		
 			document.onreadystatechange = function() {
 				if (document.readyState = "complete") {
-					
-						getPromiseRequest('http://www.niupi.site:8082/random/img')
+					if(isdata){
+						//getPromiseRequest('http://114.116.71.18:8082/niupi/random/random/img')
+							getPromiseRequest('https://localhost:8085/niupi/random/random/img')
 						    .then(function (data) {
 						      console.log(data.data.img);
 						      isdata = false;
@@ -48,13 +50,13 @@
 						    }).then(function(data) {
 						        console.log(data);
 						    })
-					
+					}
 					
 				}
 			};		
 							
 							function next(){
-								getPromiseRequest('http://www.niupi.site:8082/random/img')
+								getPromiseRequest('http://114.116.71.18:8082/niupi/random/random/img')
 								    .then(function (data) {
 								      console.log(data.data.img);
 								      isdata = false;
