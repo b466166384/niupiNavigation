@@ -90,6 +90,17 @@
 					<div>
 						<input id="myRange" type="range" min="0" max="1" step="0.1" oninput="opacityVoid()" />
 					</div>
+					
+					<div style="display: flex; flex-direction: row;">
+						<!-- <span>幻灯背景</span> -->
+						<p class="btn-on" onclick="on_off()">
+							<!-- 圆点 -->
+							<span class="btn-on-circle"></span>
+							<!-- 文字 -->
+						<span class="btn-on-text">ON</span>
+						</p>
+					</div>
+					
 					<div>
 						<span class="Selectbg">
 							<input style="border: 0;outline: none; background-color: rgba(0,0,0,0); width: 90px;"
@@ -104,16 +115,7 @@
 
 						<button style="margin-left: 10px;" id="bg_button" onclick="setLogoImg()">修改背景</button>
 					</div>
-					<div style="display: flex; flex-direction: row;">
-
-						<!-- <span>幻灯背景</span> -->
-						<p class="btn-on" onclick="on_off()">
-							<!-- 圆点 -->
-							<span class="btn-on-circle"></span>
-							<!-- 文字 -->
-				 		<span class="btn-on-text">ON</span>
-						</p>
-					</div>
+					
 				</div>
 
 
