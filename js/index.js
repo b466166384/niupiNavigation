@@ -94,7 +94,7 @@ function getPromiseRequest(url) {
 	return new Promise((resolve, reject) => {
 		axios.create({
 			headers: headers
-		}).get("https://114.116.71.18:8085/niupi/random/random/img").then((res) => {
+		}).get("http://114.116.71.18:8082/niupi/random/random/img").then((res) => {
 			if (res.status == 200) {
 				console.log(res)
 				resolve(res);
@@ -167,14 +167,14 @@ function contentSwitch(){
 		console.log(img)
 	if(img.toString().indexOf("show_open")== -1){
 		console.log("开")
-		document.getElementById("contentSwitchImg").src = "../img/show_open.png?v="+new Date().getTime()
+		document.getElementById("contentSwitchImg").src = "http://114.116.71.18:8080/picture/show_open.png?v="+new Date().getTime()
 		document.getElementById("body_show").style.visibility="visible"
 		var img = document.getElementById("bg_div_img");
 		img.style.opacity = imgOpacity;
 		
 	}else{
 		console.log("关")
-		document.getElementById("contentSwitchImg").src = "../img/show_close.png?v="+new Date().getTime()
+		document.getElementById("contentSwitchImg").src = "http://114.116.71.18:8080/picture/show_close.png?v="+new Date().getTime()
 		document.getElementById("body_show").style.visibility="hidden"
 		var img = document.getElementById("bg_div_img");
 		img.style.opacity = 1;
