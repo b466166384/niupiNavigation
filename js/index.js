@@ -328,7 +328,7 @@ function select6() {
 	// document.getElementById("box6").style.display = "flex";
 	// document.getElementById("box7").style.display = "none";
 	// document.getElementById("box8").style.display = "none";
-		document.getElementById("index_box").src = "outerNet.html";
+	document.getElementById("index_box").src = "outerNet.html";
 
 	document.getElementById("span_select1").style.color = '#CC0033';
 	document.getElementById("span_select2").style.color = '#CC0033';
@@ -350,7 +350,7 @@ function select7() {
 	// document.getElementById("box6").style.display = "none";
 	// document.getElementById("box7").style.display = "flex";
 	// document.getElementById("box8").style.display = "none";
-		document.getElementById("index_box").src = "software.html";
+	document.getElementById("index_box").src = "software.html";
 
 	document.getElementById("span_select1").style.color = '#CC0033';
 	document.getElementById("span_select2").style.color = '#CC0033';
@@ -366,13 +366,13 @@ function select8() {
 	// document.getElementById("box").style.display = "none";
 	// console.log("--------->显隐");
 	// document.getElementById("box2").style.display = "none";
-	// document.getElementById("box3").style.display = "none";
+	// document.getElementById("box3").style.display = "none";.
 	// document.getElementById("box4").style.display = "none";
 	// document.getElementById("box5").style.display = "none";
 	// document.getElementById("box6").style.display = "none";
 	// document.getElementById("box7").style.display = "none";
 	// document.getElementById("box8").style.display = "flex";
-			document.getElementById("index_box").src = "other.html";
+	document.getElementById("index_box").src = "other.html";
 
 	document.getElementById("span_select1").style.color = '#CC0033';
 	document.getElementById("span_select2").style.color = '#CC0033';
