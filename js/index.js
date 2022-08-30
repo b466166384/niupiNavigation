@@ -2,7 +2,7 @@ var cookie_name = "bgImg";
 var imgUrl = null;
 var imgOpacity = null;
 document.onreadystatechange = function() {
-	on_off(false)
+	//on_off(false)
 	if (document.readyState = "complete") {
 		if (imgUrl == null) {
 			imgUrl = localStorage.getItem("bgImgSto");
@@ -113,19 +113,21 @@ function on_off(type) {
 	var btn = document.getElementsByClassName("btn-on")[0];
 	var circle = document.getElementsByClassName("btn-on-circle")[0];
 	var text = document.getElementsByClassName("btn-on-text")[0];
-
+console.log(btn);
+console.log(circle);
+console.log(text);
 	if (!type) {
-		btn.style = "background-color: #ccc;"
-		circle.style = "left: 40px;background-color: #888;box-shadow: 0 0 10px #888;";
-		text.style = "right: 30px;color: #888;";
-		text.innerText = "OFF";
-		closePlay();
+		btn.style = "background-color:  #12B090;"
+		circle.style = "left: 5px;background-color: rgb(255, 255, 255);box-shadow: 0 0 10px white;";
+		text.style = "right: 10px;color: white;";
+		text.innerText = "ON";
+		playPic();
 	} else {
 		btn.style = ""
 		circle.style = "";
 		text.style = "";
-		text.innerText = "ON";
-		playPic();
+		text.innerText = "OFF";
+		closePlay();
 	}
 	btn.setAttribute("onclick", "on_off(" + !type + ")"); // 修改状态
 }
