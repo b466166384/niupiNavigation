@@ -17,10 +17,9 @@
 		<script type="text/javascript">
 			function getPromiseRequest(url) {
 			            return new Promise(function (resolve, reject) {
-			                var xhr =  new ActiveXObject("Msxml2.ServerXMLHTTP.3.0");
+			                var xhr = new XMLHttpRequest();
 			               xhr.open('get', url);
 			               xhr.send(null);
-						   
 			                xhr.onreadystatechange = function () {
 			                    if(xhr.readyState != 4) return;// 避免执行reject函数
 			                    if (xhr.readyState == 4 && xhr.status == 200) {
@@ -38,8 +37,7 @@
 			document.onreadystatechange = function() {
 				if (document.readyState = "complete") {
 					if(isdata){
-						//getPromiseRequest('http://114.116.71.18:8082/niupi/random/random/img')
-							getPromiseRequest('https://localhost:8085/niupi/random/random/img')
+						getPromiseRequest('http://114.116.71.18:8082/niupi/random/random/img')
 						    .then(function (data) {
 						      console.log(data.data.img);
 						      isdata = false;
